@@ -56,6 +56,14 @@ Estas son las instrucciones y normas de uso del compilador
 16. El compilador genera un fichero("Nombre de fichero de origen"_errores.txt) de errores en el directorio del archivo de programa.
 17. El compilador genera un fichero("Nombre de fichero de origen"_out.txt) con los datos que va a guaradr en la memoria. Los dos primeros bytes de cada línea indican la dirección de la meoria del programa donde se guarada el tercer byte de la línea.  
   
+## Instrucciones de uso del Compilador.
+El compilador explica cada uno de los pasos a seguir, pero se enumeran aqui tambien:
+1<sup>o</sup>. Ejecuta el archivo Compilador_HTDI20.exe.
+2<sup>o</sup>. Se escribe el directorio del archivo que contiene el código de programa, separando las carpetas con /. *Por ejemplo: C:/Programas/Prueba1/Codigo.txt*.
+3<sup>o</sup>. Tras realizar los pasos anteriores, el compilador generara el archivo de salida, en caso de que tenga errores lo indicará y no permitirá caragar el codigo en el HTI20. Estos errores se pueden encontar en el archivo "_errores.txt".
+4<sup>o</sup>. Tras solventar los errores, si los hubiera, indica con una "Y" si se desea cargar el código en el HTDI20 y con una "N" en caso contrario.
+5<sup>o</sup>. Ahora debes introducir el numero del puerto COM en el que esta conectado el HTDI20. Se puede encontar en el administrador de dispositivos en la pestaña "Puertos (COM y LPT)", si hay mas de un dispositivo y no sabes cual es, desconecta el HTDI20 y comprueba cual de los dispositivos ha desaparecido.
+6<sup>o</sup>. Se comenzará a mandar el código al HTDI20, si se producieran errores en este proceso el compilador lo avisará y detendra el envio, esto suele deberse a que se ha introducido mal el número del puerto COM.
 
 
 
