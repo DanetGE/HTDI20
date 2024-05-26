@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"HTDI_SIMU_func_synth.vhd" \
+"../../../../../HTDI20.srcs/sim_1/new/HTDI_SIMU.vhd" \
+
+# Do not sort compile order
+nosort

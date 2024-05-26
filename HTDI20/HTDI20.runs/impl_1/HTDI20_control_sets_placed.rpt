@@ -1,0 +1,126 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Tue Apr  9 00:46:00 2024
+| Host         : MSI running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file HTDI20_control_sets_placed.rpt
+| Design       : HTDI20
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    48 |
+|    Minimum number of control sets                        |    48 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   189 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    48 |
+| >= 0 to < 4        |    27 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |    12 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     8 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             223 |           83 |
+| No           | No                    | Yes                    |              28 |           21 |
+| No           | Yes                   | No                     |               8 |            8 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------------------------------------------------------------------------+---------------+--------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+|                                            Clock Signal                                           | Enable Signal |                                         Set/Reset Signal                                         | Slice Load Count | Bel Load Count | Bels / Slice |
++---------------------------------------------------------------------------------------------------+---------------+--------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+| ~UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[68] |               | UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[69] |                1 |              1 |         1.00 |
+|  UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[55] |               | UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[65] |                1 |              1 |         1.00 |
+|  UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[55] |               | UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[74] |                1 |              1 |         1.00 |
+|  UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[55] |               | UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[69] |                1 |              1 |         1.00 |
+|  UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[4]  |               | UC/Sinc_BREQ/n_BREQS                                                                             |                1 |              1 |         1.00 |
+|  UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[55] |               | UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[67] |                1 |              1 |         1.00 |
+|  UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[55] |               | Arq_Fisica/PSW_FINAL/F1_FLAG/Q_reg_LDC_i_1_n_0                                                   |                1 |              1 |         1.00 |
+|  UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[55] |               | Arq_Fisica/PSW_FINAL/F0_FLAG/Q_reg_LDC_i_1_n_0                                                   |                1 |              1 |         1.00 |
+|  UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[55] |               | Arq_Fisica/PSW_FINAL/F2_FLAG/Q_reg_LDC_i_1_n_0                                                   |                1 |              1 |         1.00 |
+|  UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[55] |               | Arq_Fisica/PSW_FINAL/IF_FLAG/Q_reg_LDC_i_1_n_0                                                   |                1 |              1 |         1.00 |
+|  UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[55] |               | Arq_Fisica/PSW_FINAL/F3_FLAG/Q_reg_LDC_i_1_n_0                                                   |                1 |              1 |         1.00 |
+|  UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[55] |               | Arq_Fisica/PSW_FINAL/IM_FLAG/Q_reg_LDC_i_1_n_0                                                   |                1 |              1 |         1.00 |
+| ~UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[64] |               | UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[65] |                1 |              1 |         1.00 |
+| ~UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[66] |               | UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[67] |                1 |              1 |         1.00 |
+| ~UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[73] |               | UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[74] |                1 |              1 |         1.00 |
+| ~LCB_IN_IBUF_BUFG[0]                                                                              |               | UC/SUC/s_estado_reg[1]_1                                                                         |                1 |              1 |         1.00 |
+| ~UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[62] |               | UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[63] |                1 |              1 |         1.00 |
+| ~UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[57] |               | UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[58] |                1 |              1 |         1.00 |
+|  UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[55] |               | UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[63] |                1 |              1 |         1.00 |
+| ~LCB_IN_IBUF_BUFG[3]                                                                              |               |                                                                                                  |                1 |              1 |         1.00 |
+|  UC/Uni_Micropro/UCROM/bbstub_spo[62]                                                             |               | UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[58] |                1 |              1 |         1.00 |
+| ~UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[60] |               | UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[61] |                1 |              1 |         1.00 |
+|  UC/Uni_Micropro/UCROM/bbstub_spo[62]                                                             |               | Arq_Fisica/PSW_FINAL/CARRY_FLAG/Q_reg_LDC_i_1_n_0                                                |                1 |              1 |         1.00 |
+|  UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[55] |               | UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[61] |                1 |              1 |         1.00 |
+|  UC/Uni_Micropro/UCROM/bbstub_spo[62]_0                                                           |               |                                                                                                  |                1 |              1 |         1.00 |
+|  UC/Sinc_BREQ/CK_SUC                                                                              |               | UC/Control_INT/p_0_in                                                                            |                1 |              2 |         2.00 |
+|  LCB_IN_IBUF_BUFG[3]                                                                              |               | UC/Control_INT/p_0_in                                                                            |                2 |              3 |         1.50 |
+|  LCB_IN_IBUF_BUFG[3]                                                                              |               |                                                                                                  |                3 |              5 |         1.67 |
+|  UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[33] |               |                                                                                                  |                4 |              8 |         2.00 |
+|  UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[30] |               |                                                                                                  |                4 |              8 |         2.00 |
+|  UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[8]  |               |                                                                                                  |                2 |              8 |         4.00 |
+|  UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[27] |               |                                                                                                  |                3 |              8 |         2.67 |
+|  UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[2]  |               |                                                                                                  |                2 |              8 |         4.00 |
+|  UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[49] |               |                                                                                                  |                5 |              8 |         1.60 |
+|  UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[80] |               |                                                                                                  |                5 |              8 |         1.60 |
+|  UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[79] |               |                                                                                                  |                3 |              8 |         2.67 |
+|  UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[47] |               |                                                                                                  |                4 |              8 |         2.00 |
+|  UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[25] |               |                                                                                                  |                4 |              8 |         2.00 |
+|  UC/Sinc_BREQ/CK_CZ                                                                               |               | UC/SUC/sn_FIN_CIS_reg_0                                                                          |                3 |              8 |         2.67 |
+|  UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[45] |               |                                                                                                  |                3 |              8 |         2.67 |
+|  UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[17] |               |                                                                                                  |                4 |             16 |         4.00 |
+|  UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[1]  |               |                                                                                                  |                5 |             16 |         3.20 |
+|  UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[21] |               |                                                                                                  |                4 |             16 |         4.00 |
+|  UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[14] |               |                                                                                                  |                4 |             16 |         4.00 |
+|  UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[38] |               |                                                                                                  |                4 |             16 |         4.00 |
+|  UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[53] |               |                                                                                                  |                7 |             16 |         2.29 |
+|  UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[42] |               |                                                                                                  |                4 |             16 |         4.00 |
+|  UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[51] |               |                                                                                                  |                7 |             16 |         2.29 |
++---------------------------------------------------------------------------------------------------+---------------+--------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+
+

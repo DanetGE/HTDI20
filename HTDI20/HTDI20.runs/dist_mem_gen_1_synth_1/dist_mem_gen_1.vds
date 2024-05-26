@@ -1,0 +1,359 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Apr  8 23:41:42 2024
+# Process ID: 23252
+# Current directory: C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.runs/dist_mem_gen_1_synth_1
+# Command line: vivado.exe -log dist_mem_gen_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dist_mem_gen_1.tcl
+# Log file: C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.runs/dist_mem_gen_1_synth_1/dist_mem_gen_1.vds
+# Journal file: C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.runs/dist_mem_gen_1_synth_1\vivado.jou
+# Running On: MSI, OS: Windows, CPU Frequency: 2208 MHz, CPU Physical cores: 6, Host memory: 17019 MB
+#-----------------------------------------------------------
+source dist_mem_gen_1.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 464.297 ; gain = 183.887
+Command: synth_design -top dist_mem_gen_1 -part xc7a35tcpg236-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 26516
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1307.484 ; gain = 440.406
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_1' [c:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.gen/sources_1/ip/dist_mem_gen_1/synth/dist_mem_gen_1.vhd:66]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_ADDR_WIDTH bound to: 16 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 65536 - type: integer 
+	Parameter C_HAS_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_D bound to: 0 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: dist_mem_gen_1.mif - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 1 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 96 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dist_mem_gen_v8_0_14' declared at 'c:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.gen/sources_1/ip/dist_mem_gen_1/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3191' bound to instance 'U0' of component 'dist_mem_gen_v8_0_14' [c:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.gen/sources_1/ip/dist_mem_gen_1/synth/dist_mem_gen_1.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_1' (0#1) [c:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.gen/sources_1/ip/dist_mem_gen_1/synth/dist_mem_gen_1.vhd:66]
+WARNING: [Synth 8-7129] Port qspo[95] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[94] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[93] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[92] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[91] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[90] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[89] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[88] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[87] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[86] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[85] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[84] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[83] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[82] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[81] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[80] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[79] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[78] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[77] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[76] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[75] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[74] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[73] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[72] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[71] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[70] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[69] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[68] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[67] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[66] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[65] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[64] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[63] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[62] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[61] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[60] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[59] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[58] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[57] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[56] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[55] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[54] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[53] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[52] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[51] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[50] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[49] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[48] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[47] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[46] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[45] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[44] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[43] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[42] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[41] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[40] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[39] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[38] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[37] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[36] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[35] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[34] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[33] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[32] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[31] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[30] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[29] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[28] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[27] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[26] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[25] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[24] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[23] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[22] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[21] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[20] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[19] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[18] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[17] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[16] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[15] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[14] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[13] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[12] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[11] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[10] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[9] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[8] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[7] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[6] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[5] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[4] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[3] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[2] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[1] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[0] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo_ce in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo_rst in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo_srst in module rom is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:21:01 ; elapsed = 00:55:00 . Memory (MB): peak = 16279.066 ; gain = 15411.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:21:02 ; elapsed = 00:55:00 . Memory (MB): peak = 16279.066 ; gain = 15411.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:21:02 ; elapsed = 00:55:00 . Memory (MB): peak = 16279.066 ; gain = 15411.988
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 16279.066 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.gen/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.gen/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1_ooc.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.runs/dist_mem_gen_1_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.runs/dist_mem_gen_1_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 16279.066 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.193 . Memory (MB): peak = 16279.066 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:21:13 ; elapsed = 00:55:27 . Memory (MB): peak = 16279.066 ; gain = 15411.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:21:13 ; elapsed = 00:55:27 . Memory (MB): peak = 16279.066 ; gain = 15411.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.runs/dist_mem_gen_1_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:21:13 ; elapsed = 00:55:27 . Memory (MB): peak = 16279.066 ; gain = 15411.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:21:28 ; elapsed = 00:55:56 . Memory (MB): peak = 16279.066 ; gain = 15411.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:21:37 ; elapsed = 00:56:15 . Memory (MB): peak = 16279.066 ; gain = 15411.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|rom         | rom[65535] | 65536x87      | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:21:43 ; elapsed = 00:56:27 . Memory (MB): peak = 16279.066 ; gain = 15411.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:21:44 ; elapsed = 00:56:28 . Memory (MB): peak = 16279.066 ; gain = 15411.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:21:45 ; elapsed = 00:56:30 . Memory (MB): peak = 16279.066 ; gain = 15411.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:21:51 ; elapsed = 00:56:42 . Memory (MB): peak = 16279.066 ; gain = 15411.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:21:51 ; elapsed = 00:56:42 . Memory (MB): peak = 16279.066 ; gain = 15411.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:21:51 ; elapsed = 00:56:42 . Memory (MB): peak = 16279.066 ; gain = 15411.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:21:51 ; elapsed = 00:56:42 . Memory (MB): peak = 16279.066 ; gain = 15411.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:21:52 ; elapsed = 00:56:43 . Memory (MB): peak = 16279.066 ; gain = 15411.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:21:52 ; elapsed = 00:56:43 . Memory (MB): peak = 16279.066 ; gain = 15411.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT2 |    77|
+|2     |LUT3 |    76|
+|3     |LUT4 |    97|
+|4     |LUT5 |   186|
+|5     |LUT6 |   846|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:21:52 ; elapsed = 00:56:43 . Memory (MB): peak = 16279.066 ; gain = 15411.988
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 411 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:47 ; elapsed = 00:56:35 . Memory (MB): peak = 16279.066 ; gain = 15411.988
+Synthesis Optimization Complete : Time (s): cpu = 00:21:52 ; elapsed = 00:56:44 . Memory (MB): peak = 16279.066 ; gain = 15411.988
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 16279.066 ; gain = 0.000
+WARNING: [Netlist 29-101] Netlist 'dist_mem_gen_1' is not ideal for floorplanning, since the cellview 'rom' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 16279.066 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: f5b09e7
+INFO: [Common 17-83] Releasing license: Synthesis
+17 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:21:58 ; elapsed = 00:57:00 . Memory (MB): peak = 16279.066 ; gain = 15803.285
+INFO: [Coretcl 2-1174] Renamed 3 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.090 . Memory (MB): peak = 16279.066 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.runs/dist_mem_gen_1_synth_1/dist_mem_gen_1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file dist_mem_gen_1_utilization_synth.rpt -pb dist_mem_gen_1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  9 00:38:58 2024...

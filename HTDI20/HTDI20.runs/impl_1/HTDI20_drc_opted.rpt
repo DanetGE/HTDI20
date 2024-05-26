@@ -1,0 +1,359 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Tue Apr  9 00:45:52 2024
+| Host         : MSI running 64-bit major release  (build 9200)
+| Command      : report_drc -file HTDI20_drc_opted.rpt -pb HTDI20_drc_opted.pb -rpx HTDI20_drc_opted.rpx
+| Design       : HTDI20
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 28
++-------------+----------+-------------------------------------------------------------+------------+
+| Rule        | Severity | Description                                                 | Violations |
++-------------+----------+-------------------------------------------------------------+------------+
+| CFGBVS-1    | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties         | 1          |
+| PLCK-12     | Warning  | Clock Placer Checks                                         | 2          |
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 25         |
++-------------+----------+-------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CFGBVS-1#1 Warning
+Missing CFGBVS and CONFIG_VOLTAGE Design Properties  
+Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+PLCK-12#1 Warning
+Clock Placer Checks  
+Poor placement for routing between an IO pin and BUFG. 
+Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
+ This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	LCB_IN_IBUF[0]_inst (IBUF.O) is locked to M1
+	LCB_IN_IBUF_BUFG[0]_inst (BUFG.I) cannot be placed
+
+Related violations: <none>
+
+PLCK-12#2 Warning
+Clock Placer Checks  
+Poor placement for routing between an IO pin and BUFG. 
+Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
+ This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	LCB_IN_IBUF[3]_inst (IBUF.O) is locked to N1
+	LCB_IN_IBUF_BUFG[3]_inst (BUFG.I) cannot be placed
+
+Related violations: <none>
+
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT UC/Sinc_BREQ/MAIN.S[7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. Involved cells are:
+UC/Uni_Micropro/CONTADOR/MAIN.S_reg[0],
+UC/Uni_Micropro/CONTADOR/MAIN.S_reg[1],
+UC/Uni_Micropro/CONTADOR/MAIN.S_reg[2],
+UC/Uni_Micropro/CONTADOR/MAIN.S_reg[3],
+UC/Uni_Micropro/CONTADOR/MAIN.S_reg[4],
+UC/Uni_Micropro/CONTADOR/MAIN.S_reg[5],
+UC/Uni_Micropro/CONTADOR/MAIN.S_reg[6]
+UC/Uni_Micropro/CONTADOR/MAIN.S_reg[7]
+Related violations: <none>
+
+PLHOLDVIO-2#2 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT UC/Sinc_BREQ/s_estado[1]_i_2 is driving clock pin of 2 cells. This could lead to large hold time violations. Involved cells are:
+UC/SUC/s_estado_reg[0], UC/SUC/s_estado_reg[1]
+Related violations: <none>
+
+PLHOLDVIO-2#3 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT UC/Uni_Micropro/UCROM/Q_C_i_2 is driving clock pin of 2 cells. This could lead to large hold time violations. Involved cells are:
+Arq_Fisica/PSW_FINAL/CARRY_FLAG/Q_reg_C
+Arq_Fisica/PSW_FINAL/CARRY_FLAG/Q_reg_P
+Related violations: <none>
+
+PLHOLDVIO-2#4 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT UC/Uni_Micropro/UCROM/Q_C_i_2__0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+Arq_Fisica/PSW_FINAL/ZERO_FLAG/Q_reg_C
+Related violations: <none>
+
+PLHOLDVIO-2#5 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[14]_INST_0 is driving clock pin of 16 cells. This could lead to large hold time violations. Involved cells are:
+Arq_Fisica/PC/CUENTA_reg[0], Arq_Fisica/PC/CUENTA_reg[10],
+Arq_Fisica/PC/CUENTA_reg[11], Arq_Fisica/PC/CUENTA_reg[12],
+Arq_Fisica/PC/CUENTA_reg[13], Arq_Fisica/PC/CUENTA_reg[14],
+Arq_Fisica/PC/CUENTA_reg[15], Arq_Fisica/PC/CUENTA_reg[1],
+Arq_Fisica/PC/CUENTA_reg[2], Arq_Fisica/PC/CUENTA_reg[3],
+Arq_Fisica/PC/CUENTA_reg[4], Arq_Fisica/PC/CUENTA_reg[5],
+Arq_Fisica/PC/CUENTA_reg[6], Arq_Fisica/PC/CUENTA_reg[7],
+Arq_Fisica/PC/CUENTA_reg[8] (the first 15 of 16 listed)
+Related violations: <none>
+
+PLHOLDVIO-2#6 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[17]_INST_0 is driving clock pin of 16 cells. This could lead to large hold time violations. Involved cells are:
+Arq_Fisica/SP/CUENTA_reg[0], Arq_Fisica/SP/CUENTA_reg[10],
+Arq_Fisica/SP/CUENTA_reg[11], Arq_Fisica/SP/CUENTA_reg[12],
+Arq_Fisica/SP/CUENTA_reg[13], Arq_Fisica/SP/CUENTA_reg[14],
+Arq_Fisica/SP/CUENTA_reg[15], Arq_Fisica/SP/CUENTA_reg[1],
+Arq_Fisica/SP/CUENTA_reg[2], Arq_Fisica/SP/CUENTA_reg[3],
+Arq_Fisica/SP/CUENTA_reg[4], Arq_Fisica/SP/CUENTA_reg[5],
+Arq_Fisica/SP/CUENTA_reg[6], Arq_Fisica/SP/CUENTA_reg[7],
+Arq_Fisica/SP/CUENTA_reg[8] (the first 15 of 16 listed)
+Related violations: <none>
+
+PLHOLDVIO-2#7 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[1]_INST_0 is driving clock pin of 16 cells. This could lead to large hold time violations. Involved cells are:
+Arq_Fisica/AR/D_reg[0], Arq_Fisica/AR/D_reg[10], Arq_Fisica/AR/D_reg[11],
+Arq_Fisica/AR/D_reg[12], Arq_Fisica/AR/D_reg[13], Arq_Fisica/AR/D_reg[14],
+Arq_Fisica/AR/D_reg[15], Arq_Fisica/AR/D_reg[1], Arq_Fisica/AR/D_reg[2],
+Arq_Fisica/AR/D_reg[3], Arq_Fisica/AR/D_reg[4], Arq_Fisica/AR/D_reg[5],
+Arq_Fisica/AR/D_reg[6], Arq_Fisica/AR/D_reg[7], Arq_Fisica/AR/D_reg[8]
+ (the first 15 of 16 listed)
+Related violations: <none>
+
+PLHOLDVIO-2#8 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[21]_INST_0 is driving clock pin of 16 cells. This could lead to large hold time violations. Involved cells are:
+Arq_Fisica/IX/CUENTA_reg[0], Arq_Fisica/IX/CUENTA_reg[10],
+Arq_Fisica/IX/CUENTA_reg[11], Arq_Fisica/IX/CUENTA_reg[12],
+Arq_Fisica/IX/CUENTA_reg[13], Arq_Fisica/IX/CUENTA_reg[14],
+Arq_Fisica/IX/CUENTA_reg[15], Arq_Fisica/IX/CUENTA_reg[1],
+Arq_Fisica/IX/CUENTA_reg[2], Arq_Fisica/IX/CUENTA_reg[3],
+Arq_Fisica/IX/CUENTA_reg[4], Arq_Fisica/IX/CUENTA_reg[5],
+Arq_Fisica/IX/CUENTA_reg[6], Arq_Fisica/IX/CUENTA_reg[7],
+Arq_Fisica/IX/CUENTA_reg[8] (the first 15 of 16 listed)
+Related violations: <none>
+
+PLHOLDVIO-2#9 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[25]_INST_0 is driving clock pin of 8 cells. This could lead to large hold time violations. Involved cells are:
+Arq_Fisica/AUX0/S_reg[0], Arq_Fisica/AUX0/S_reg[1],
+Arq_Fisica/AUX0/S_reg[2], Arq_Fisica/AUX0/S_reg[3],
+Arq_Fisica/AUX0/S_reg[4], Arq_Fisica/AUX0/S_reg[5],
+Arq_Fisica/AUX0/S_reg[6], Arq_Fisica/AUX0/S_reg[7]
+Related violations: <none>
+
+PLHOLDVIO-2#10 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[28]_INST_0 is driving clock pin of 8 cells. This could lead to large hold time violations. Involved cells are:
+Arq_Fisica/AUX1/S_reg[0], Arq_Fisica/AUX1/S_reg[1],
+Arq_Fisica/AUX1/S_reg[2], Arq_Fisica/AUX1/S_reg[3],
+Arq_Fisica/AUX1/S_reg[4], Arq_Fisica/AUX1/S_reg[5],
+Arq_Fisica/AUX1/S_reg[6], Arq_Fisica/AUX1/S_reg[7]
+Related violations: <none>
+
+PLHOLDVIO-2#11 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[2]_INST_0 is driving clock pin of 8 cells. This could lead to large hold time violations. Involved cells are:
+UC/Uni_Micropro/SELECTOR/Registro_IR/S_reg[0],
+UC/Uni_Micropro/SELECTOR/Registro_IR/S_reg[1],
+UC/Uni_Micropro/SELECTOR/Registro_IR/S_reg[2],
+UC/Uni_Micropro/SELECTOR/Registro_IR/S_reg[3],
+UC/Uni_Micropro/SELECTOR/Registro_IR/S_reg[4],
+UC/Uni_Micropro/SELECTOR/Registro_IR/S_reg[5],
+UC/Uni_Micropro/SELECTOR/Registro_IR/S_reg[6]
+UC/Uni_Micropro/SELECTOR/Registro_IR/S_reg[7]
+Related violations: <none>
+
+PLHOLDVIO-2#12 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[31]_INST_0 is driving clock pin of 8 cells. This could lead to large hold time violations. Involved cells are:
+Arq_Fisica/AUX2/S_reg[0], Arq_Fisica/AUX2/S_reg[1],
+Arq_Fisica/AUX2/S_reg[2], Arq_Fisica/AUX2/S_reg[3],
+Arq_Fisica/AUX2/S_reg[4], Arq_Fisica/AUX2/S_reg[5],
+Arq_Fisica/AUX2/S_reg[6], Arq_Fisica/AUX2/S_reg[7]
+Related violations: <none>
+
+PLHOLDVIO-2#13 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[34]_INST_0 is driving clock pin of 8 cells. This could lead to large hold time violations. Involved cells are:
+Arq_Fisica/AUX3/S_reg[0], Arq_Fisica/AUX3/S_reg[1],
+Arq_Fisica/AUX3/S_reg[2], Arq_Fisica/AUX3/S_reg[3],
+Arq_Fisica/AUX3/S_reg[4], Arq_Fisica/AUX3/S_reg[5],
+Arq_Fisica/AUX3/S_reg[6], Arq_Fisica/AUX3/S_reg[7]
+Related violations: <none>
+
+PLHOLDVIO-2#14 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[45]_INST_0 is driving clock pin of 16 cells. This could lead to large hold time violations. Involved cells are:
+Arq_Fisica/AUX6/CUENTA_reg[0], Arq_Fisica/AUX6/CUENTA_reg[10],
+Arq_Fisica/AUX6/CUENTA_reg[11], Arq_Fisica/AUX6/CUENTA_reg[12],
+Arq_Fisica/AUX6/CUENTA_reg[13], Arq_Fisica/AUX6/CUENTA_reg[14],
+Arq_Fisica/AUX6/CUENTA_reg[15], Arq_Fisica/AUX6/CUENTA_reg[1],
+Arq_Fisica/AUX6/CUENTA_reg[2], Arq_Fisica/AUX6/CUENTA_reg[3],
+Arq_Fisica/AUX6/CUENTA_reg[4], Arq_Fisica/AUX6/CUENTA_reg[5],
+Arq_Fisica/AUX6/CUENTA_reg[6], Arq_Fisica/AUX6/CUENTA_reg[7],
+Arq_Fisica/AUX6/CUENTA_reg[8] (the first 15 of 16 listed)
+Related violations: <none>
+
+PLHOLDVIO-2#15 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[49]_INST_0 is driving clock pin of 16 cells. This could lead to large hold time violations. Involved cells are:
+Arq_Fisica/AUX7/CUENTA_reg[0], Arq_Fisica/AUX7/CUENTA_reg[10],
+Arq_Fisica/AUX7/CUENTA_reg[11], Arq_Fisica/AUX7/CUENTA_reg[12],
+Arq_Fisica/AUX7/CUENTA_reg[13], Arq_Fisica/AUX7/CUENTA_reg[14],
+Arq_Fisica/AUX7/CUENTA_reg[15], Arq_Fisica/AUX7/CUENTA_reg[1],
+Arq_Fisica/AUX7/CUENTA_reg[2], Arq_Fisica/AUX7/CUENTA_reg[3],
+Arq_Fisica/AUX7/CUENTA_reg[4], Arq_Fisica/AUX7/CUENTA_reg[5],
+Arq_Fisica/AUX7/CUENTA_reg[6], Arq_Fisica/AUX7/CUENTA_reg[7],
+Arq_Fisica/AUX7/CUENTA_reg[8] (the first 15 of 16 listed)
+Related violations: <none>
+
+PLHOLDVIO-2#16 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[4]_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+UC/Sinc_BREQ/sn_FIN_CM_reg
+Related violations: <none>
+
+PLHOLDVIO-2#17 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[52]_INST_0 is driving clock pin of 8 cells. This could lead to large hold time violations. Involved cells are:
+Arq_Fisica/Registro_A/main_process.v_D_reg[0],
+Arq_Fisica/Registro_A/main_process.v_D_reg[1],
+Arq_Fisica/Registro_A/main_process.v_D_reg[2],
+Arq_Fisica/Registro_A/main_process.v_D_reg[3],
+Arq_Fisica/Registro_A/main_process.v_D_reg[4],
+Arq_Fisica/Registro_A/main_process.v_D_reg[5],
+Arq_Fisica/Registro_A/main_process.v_D_reg[6]
+Arq_Fisica/Registro_A/main_process.v_D_reg[7]
+Related violations: <none>
+
+PLHOLDVIO-2#18 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[54]_INST_0 is driving clock pin of 8 cells. This could lead to large hold time violations. Involved cells are:
+Arq_Fisica/Registro_B/main_process.v_D_reg[0],
+Arq_Fisica/Registro_B/main_process.v_D_reg[1],
+Arq_Fisica/Registro_B/main_process.v_D_reg[2],
+Arq_Fisica/Registro_B/main_process.v_D_reg[3],
+Arq_Fisica/Registro_B/main_process.v_D_reg[4],
+Arq_Fisica/Registro_B/main_process.v_D_reg[5],
+Arq_Fisica/Registro_B/main_process.v_D_reg[6]
+Arq_Fisica/Registro_B/main_process.v_D_reg[7]
+Related violations: <none>
+
+PLHOLDVIO-2#19 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[56]_INST_0 is driving clock pin of 8 cells. This could lead to large hold time violations. Involved cells are:
+Arq_Fisica/Registro_C/main_process.v_D_reg[0],
+Arq_Fisica/Registro_C/main_process.v_D_reg[1],
+Arq_Fisica/Registro_C/main_process.v_D_reg[2],
+Arq_Fisica/Registro_C/main_process.v_D_reg[3],
+Arq_Fisica/Registro_C/main_process.v_D_reg[4],
+Arq_Fisica/Registro_C/main_process.v_D_reg[5],
+Arq_Fisica/Registro_C/main_process.v_D_reg[6]
+Arq_Fisica/Registro_C/main_process.v_D_reg[7]
+Related violations: <none>
+
+PLHOLDVIO-2#20 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[58]_INST_0 is driving clock pin of 16 cells. This could lead to large hold time violations. Involved cells are:
+Arq_Fisica/Registro_D/main_process.v_D_reg[0],
+Arq_Fisica/Registro_D/main_process.v_D_reg[10],
+Arq_Fisica/Registro_D/main_process.v_D_reg[11],
+Arq_Fisica/Registro_D/main_process.v_D_reg[12],
+Arq_Fisica/Registro_D/main_process.v_D_reg[13],
+Arq_Fisica/Registro_D/main_process.v_D_reg[14],
+Arq_Fisica/Registro_D/main_process.v_D_reg[15],
+Arq_Fisica/Registro_D/main_process.v_D_reg[1],
+Arq_Fisica/Registro_D/main_process.v_D_reg[2],
+Arq_Fisica/Registro_D/main_process.v_D_reg[3],
+Arq_Fisica/Registro_D/main_process.v_D_reg[4],
+Arq_Fisica/Registro_D/main_process.v_D_reg[5],
+Arq_Fisica/Registro_D/main_process.v_D_reg[6],
+Arq_Fisica/Registro_D/main_process.v_D_reg[7],
+Arq_Fisica/Registro_D/main_process.v_D_reg[8]
+ (the first 15 of 16 listed)
+Related violations: <none>
+
+PLHOLDVIO-2#21 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[60]_INST_0 is driving clock pin of 16 cells. This could lead to large hold time violations. Involved cells are:
+Arq_Fisica/Registro_E/main_process.v_D_reg[0],
+Arq_Fisica/Registro_E/main_process.v_D_reg[10],
+Arq_Fisica/Registro_E/main_process.v_D_reg[11],
+Arq_Fisica/Registro_E/main_process.v_D_reg[12],
+Arq_Fisica/Registro_E/main_process.v_D_reg[13],
+Arq_Fisica/Registro_E/main_process.v_D_reg[14],
+Arq_Fisica/Registro_E/main_process.v_D_reg[15],
+Arq_Fisica/Registro_E/main_process.v_D_reg[1],
+Arq_Fisica/Registro_E/main_process.v_D_reg[2],
+Arq_Fisica/Registro_E/main_process.v_D_reg[3],
+Arq_Fisica/Registro_E/main_process.v_D_reg[4],
+Arq_Fisica/Registro_E/main_process.v_D_reg[5],
+Arq_Fisica/Registro_E/main_process.v_D_reg[6],
+Arq_Fisica/Registro_E/main_process.v_D_reg[7],
+Arq_Fisica/Registro_E/main_process.v_D_reg[8]
+ (the first 15 of 16 listed)
+Related violations: <none>
+
+PLHOLDVIO-2#22 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[62]_INST_0 is driving clock pin of 12 cells. This could lead to large hold time violations. Involved cells are:
+Arq_Fisica/PSW_FINAL/F0_FLAG/Q_reg_C, Arq_Fisica/PSW_FINAL/F0_FLAG/Q_reg_P,
+Arq_Fisica/PSW_FINAL/F1_FLAG/Q_reg_C, Arq_Fisica/PSW_FINAL/F1_FLAG/Q_reg_P,
+Arq_Fisica/PSW_FINAL/F2_FLAG/Q_reg_C, Arq_Fisica/PSW_FINAL/F2_FLAG/Q_reg_P,
+Arq_Fisica/PSW_FINAL/F3_FLAG/Q_reg_C, Arq_Fisica/PSW_FINAL/F3_FLAG/Q_reg_P,
+Arq_Fisica/PSW_FINAL/IF_FLAG/Q_reg_C, Arq_Fisica/PSW_FINAL/IF_FLAG/Q_reg_P,
+Arq_Fisica/PSW_FINAL/IM_FLAG/Q_reg_C, Arq_Fisica/PSW_FINAL/IM_FLAG/Q_reg_P
+Related violations: <none>
+
+PLHOLDVIO-2#23 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[88]_INST_0 is driving clock pin of 8 cells. This could lead to large hold time violations. Involved cells are:
+Arq_Fisica/ULA/E1_reg[0], Arq_Fisica/ULA/E1_reg[1],
+Arq_Fisica/ULA/E1_reg[2], Arq_Fisica/ULA/E1_reg[3],
+Arq_Fisica/ULA/E1_reg[4], Arq_Fisica/ULA/E1_reg[5],
+Arq_Fisica/ULA/E1_reg[6], Arq_Fisica/ULA/E1_reg[7]
+Related violations: <none>
+
+PLHOLDVIO-2#24 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[89]_INST_0 is driving clock pin of 8 cells. This could lead to large hold time violations. Involved cells are:
+Arq_Fisica/ULA/E2_reg[0], Arq_Fisica/ULA/E2_reg[1],
+Arq_Fisica/ULA/E2_reg[2], Arq_Fisica/ULA/E2_reg[3],
+Arq_Fisica/ULA/E2_reg[4], Arq_Fisica/ULA/E2_reg[5],
+Arq_Fisica/ULA/E2_reg[6], Arq_Fisica/ULA/E2_reg[7]
+Related violations: <none>
+
+PLHOLDVIO-2#25 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT UC/Uni_Micropro/UCROM/your_instance_name/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[8]_INST_0 is driving clock pin of 8 cells. This could lead to large hold time violations. Involved cells are:
+Arq_Fisica/DR/HC374/main_process.v_D_reg[0],
+Arq_Fisica/DR/HC374/main_process.v_D_reg[1],
+Arq_Fisica/DR/HC374/main_process.v_D_reg[2],
+Arq_Fisica/DR/HC374/main_process.v_D_reg[3],
+Arq_Fisica/DR/HC374/main_process.v_D_reg[4],
+Arq_Fisica/DR/HC374/main_process.v_D_reg[5],
+Arq_Fisica/DR/HC374/main_process.v_D_reg[6]
+Arq_Fisica/DR/HC374/main_process.v_D_reg[7]
+Related violations: <none>
+
+

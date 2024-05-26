@@ -1,0 +1,76 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/danie/OneDrive/MSI P65 Creator 8RE/Documentos/4_Carrera/TFG/Vivado2/Unidad_Control/Unidad_Microprograma/Unidad_Microprograma.gen/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'dist_mem_gen_0_rom'
+INFO: [VRFC 10-3107] analyzing entity 'dist_mem_gen_0_dist_mem_gen_v8_0_13_synth'
+INFO: [VRFC 10-3107] analyzing entity 'dist_mem_gen_0_dist_mem_gen_v8_0_13'
+INFO: [VRFC 10-3107] analyzing entity 'dist_mem_gen_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/danie/OneDrive/MSI P65 Creator 8RE/Documentos/4_Carrera/TFG/Vivado2/Registros/Registro_de_Datos/Registro_de_Datos.srcs/sources_1/new/74xx244.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'BUFFER_244'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/danie/OneDrive/MSI P65 Creator 8RE/Documentos/4_Carrera/TFG/Vivado2/Registros/Registro_8_bits/Registro_8_bits.srcs/sources_1/new/Registro_8_bits.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Registro_8_bits'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/danie/OneDrive/MSI P65 Creator 8RE/Documentos/4_Carrera/TFG/Vivado2/Registros/Registro_16_bits/Registro_16_bits.srcs/sources_1/new/Registro_16_bits.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Registro_16_bits'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/danie/OneDrive/MSI P65 Creator 8RE/Documentos/4_Carrera/TFG/Vivado2/Registros/Registro_Contador_16bits_CargaSincrona/Registro_Contador_16bits_CargaSincrona.srcs/sources_1/new/Registro_Contador_16bits_CargaSincrona.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Registro_Contador_16bits_CargaSincrona'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/danie/OneDrive/MSI P65 Creator 8RE/Documentos/4_Carrera/TFG/Vivado2/Registros/PSW/PSW.srcs/sources_1/new/ZERO_Y_CARRY.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ZERO_Y_CARRY'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/danie/OneDrive/MSI P65 Creator 8RE/Documentos/4_Carrera/TFG/Vivado2/Registros/PSW/PSW.srcs/sources_1/new/Registros.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Registros'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/danie/OneDrive/MSI P65 Creator 8RE/Documentos/4_Carrera/TFG/Vivado2/Registros/PSW/PSW.srcs/sources_1/new/PSW.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'PSW'
+WARNING: [VRFC 10-3093] actual for formal port 'wr' is neither a static name nor a globally static expression [C:/Users/danie/OneDrive/MSI P65 Creator 8RE/Documentos/4_Carrera/TFG/Vivado2/Registros/PSW/PSW.srcs/sources_1/new/PSW.vhd:99]
+WARNING: [VRFC 10-3093] actual for formal port 'wr' is neither a static name nor a globally static expression [C:/Users/danie/OneDrive/MSI P65 Creator 8RE/Documentos/4_Carrera/TFG/Vivado2/Registros/PSW/PSW.srcs/sources_1/new/PSW.vhd:109]
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/danie/OneDrive/MSI P65 Creator 8RE/Documentos/4_Carrera/TFG/Vivado2/Registros/Registro_Auxiliar_8bits/Registro_Auxiliar_8bits.srcs/sources_1/new/Registro_Auxiliar_8bits.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Registro_Auxiliar_8bits'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/danie/OneDrive/MSI P65 Creator 8RE/Documentos/4_Carrera/TFG/Vivado2/Registros/Registro_Direcciones_AR/Registro_Direcciones_AR.srcs/sources_1/new/Registro_Direcciones_AR.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Registro_Direcciones_AR'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/danie/OneDrive/MSI P65 Creator 8RE/Documentos/4_Carrera/TFG/Vivado2/Registros/Registro_de_Datos/Registro_de_Datos.srcs/sources_1/new/Regsitro_de_Datos.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Registro_de_Datos'
+WARNING: [VRFC 10-3093] actual for formal port 'g' is neither a static name nor a globally static expression [C:/Users/danie/OneDrive/MSI P65 Creator 8RE/Documentos/4_Carrera/TFG/Vivado2/Registros/Registro_de_Datos/Registro_de_Datos.srcs/sources_1/new/Regsitro_de_Datos.vhd:55]
+WARNING: [VRFC 10-3093] actual for formal port 'n_oe' is neither a static name nor a globally static expression [C:/Users/danie/OneDrive/MSI P65 Creator 8RE/Documentos/4_Carrera/TFG/Vivado2/Registros/Registro_de_Datos/Registro_de_Datos.srcs/sources_1/new/Regsitro_de_Datos.vhd:61]
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/danie/OneDrive/MSI P65 Creator 8RE/Documentos/4_Carrera/TFG/Vivado2/Registros/Registro_Control_CR/Registro_Control_CR.srcs/sources_1/new/Registro_Control_CR.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Registro_Control_CR'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/danie/OneDrive/MSI P65 Creator 8RE/Documentos/4_Carrera/TFG/Vivado2/Registros/Unidad_Logica_Aritmetica/Unidad_Logica_Aritmetica.srcs/sources_1/new/Unidad_Logica_Aritmetica.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Unidad_Logica_Aritmetica'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/danie/OneDrive/MSI P65 Creator 8RE/Documentos/4_Carrera/TFG/Vivado2/Registros/Conexion_Registros/Conexion_Registros.srcs/sources_1/new/Arquitectura_Fisica.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Arquitectura_Fisica'
+WARNING: [VRFC 10-3093] actual for formal port 'wr' is neither a static name nor a globally static expression [C:/Users/danie/OneDrive/MSI P65 Creator 8RE/Documentos/4_Carrera/TFG/Vivado2/Registros/Conexion_Registros/Conexion_Registros.srcs/sources_1/new/Arquitectura_Fisica.vhd:150]
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/danie/OneDrive/MSI P65 Creator 8RE/Documentos/4_Carrera/TFG/Vivado2/Unidad_Control/Condicionales_6-91/Condicionales_6-91.srcs/sources_1/new/Condicionales_6_91.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Condicionales_6_91'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/danie/OneDrive/MSI P65 Creator 8RE/Documentos/4_Carrera/TFG/Vivado2/Unidad_Control/Unidad_Microprograma/Unidad_Microprograma.srcs/sources_1/new/Contador_Zona.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Contador_Zona'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/danie/OneDrive/MSI P65 Creator 8RE/Documentos/4_Carrera/TFG/Vivado2/Unidad_Control/Control_Buses/Control_Buses.srcs/sources_1/new/Control_Buses.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Control_Buses'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/danie/OneDrive/MSI P65 Creator 8RE/Documentos/4_Carrera/TFG/Vivado2/Interrupciones/Control_senal_INT/Control_senal_INT.srcs/sources_1/new/Control_senal_INT.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Control_senal_INT'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/danie/OneDrive/MSI P65 Creator 8RE/Documentos/4_Carrera/TFG/Vivado2/Unidad_Control/Detener_SUC/Detener_SUC.srcs/sources_1/new/Detener_SUC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Detener_SUC'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/danie/OneDrive/MSI P65 Creator 8RE/Documentos/4_Carrera/TFG/Vivado2/Interrupciones/Registro_IVEC/Registro_IVEC.srcs/sources_1/new/Registro_IVEC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Registro_IVEC'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/danie/OneDrive/MSI P65 Creator 8RE/Documentos/4_Carrera/TFG/Vivado2/Interrupciones/Registro_AUTO/Registro_AUTO.srcs/sources_1/new/Registro_AUTO.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Registro_AUTO'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/danie/OneDrive/MSI P65 Creator 8RE/Documentos/4_Carrera/TFG/Vivado2/Registros/Registro_Instruccion/Registro_Instruccion.srcs/sources_1/new/Registro_Instruccion.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Registro_Instruccion'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/danie/OneDrive/MSI P65 Creator 8RE/Documentos/4_Carrera/TFG/Vivado2/Unidad_Control/Unidad_Microprograma/Unidad_Microprograma.srcs/sources_1/new/Selector_Zona.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Selector_Zona'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/danie/OneDrive/MSI P65 Creator 8RE/Documentos/4_Carrera/TFG/Vivado2/Unidad_Control/Unidad_Microprograma/Unidad_Microprograma.srcs/sources_1/new/Memory.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Memory'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/danie/OneDrive/MSI P65 Creator 8RE/Documentos/4_Carrera/TFG/Vivado2/Unidad_Control/Unidad_Microprograma/Unidad_Microprograma.srcs/sources_1/new/Unidad_Microprogramas.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Unidad_Microprogramas'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/danie/OneDrive/MSI P65 Creator 8RE/Documentos/4_Carrera/TFG/Vivado2/Unidad_Control/Tiempos_Espera/Tiempos_Espera.srcs/sources_1/new/Tiempos_Espera.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Tiempos_Espera_6_10'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/danie/OneDrive/MSI P65 Creator 8RE/Documentos/4_Carrera/TFG/Vivado2/Unidad_Control/Vector_Inicio/Vector_Inicio.srcs/sources_1/new/Vector_Inicio.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Vector_Inicio'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/danie/OneDrive/MSI P65 Creator 8RE/Documentos/4_Carrera/TFG/Vivado2/Unidad_Control/Sincronizacion_senal_BREQ/Sincronizacion_senal_BREQ.srcs/sources_1/new/Sincronizacion_BREQ.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Sincronizacion_BREQ'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/danie/OneDrive/MSI P65 Creator 8RE/Documentos/4_Carrera/TFG/Vivado2/Unidad_Control/Sincronizacion_senal_BREQ/Sincronizacion_senal_BREQ.srcs/sources_1/new/Sincronizacion_Senal_BREQ.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Sincronizacion_Senal_BREQ'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/danie/OneDrive/MSI P65 Creator 8RE/Documentos/4_Carrera/TFG/Vivado2/Unidad_Control/Selector_Interrupcion/Selector_Interrupcion.srcs/sources_1/new/Selector_Interrupcion.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Selector_Interrupcion'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/danie/OneDrive/MSI P65 Creator 8RE/Documentos/4_Carrera/TFG/Vivado2/Unidad_Control/SUC/SUC.srcs/sources_1/new/SUC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Secuencial_SUC'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/danie/OneDrive/MSI P65 Creator 8RE/Documentos/4_Carrera/TFG/Vivado2/Unidad_Control/Unidad_Control/Unidad_Control.srcs/sources_1/new/Unidad_Control.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Unidad_Control'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/danie/OneDrive/MSI P65 Creator 8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.srcs/sources_1/new/HTDI20.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'HTDI20'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/danie/OneDrive/MSI P65 Creator 8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.srcs/sim_1/new/HTDI_SIMU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'HTDI_SIMU'

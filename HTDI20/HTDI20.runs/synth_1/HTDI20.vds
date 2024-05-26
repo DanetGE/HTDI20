@@ -1,0 +1,346 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Apr  9 00:42:32 2024
+# Process ID: 26208
+# Current directory: C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.runs/synth_1
+# Command line: vivado.exe -log HTDI20.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source HTDI20.tcl
+# Log file: C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.runs/synth_1/HTDI20.vds
+# Journal file: C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.runs/synth_1\vivado.jou
+# Running On: MSI, OS: Windows, CPU Frequency: 2208 MHz, CPU Physical cores: 6, Host memory: 17019 MB
+#-----------------------------------------------------------
+source HTDI20.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 464.422 ; gain = 185.289
+Command: synth_design -top HTDI20 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 30352
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1306.449 ; gain = 439.867
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'HTDI20' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.srcs/sources_1/new/HTDI20.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'Unidad_Control' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Unidad_Control/Unidad_Control/Unidad_Control.srcs/sources_1/new/Unidad_Control.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'Control_senal_INT' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Interrupciones/Control_senal_INT/Control_senal_INT.srcs/sources_1/new/Control_senal_INT.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'Control_senal_INT' (0#1) [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Interrupciones/Control_senal_INT/Control_senal_INT.srcs/sources_1/new/Control_senal_INT.vhd:51]
+INFO: [Synth 8-638] synthesizing module 'Registro_IVEC' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Interrupciones/Registro_IVEC/Registro_IVEC.srcs/sources_1/new/Registro_IVEC.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'Registro_IVEC' (0#1) [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Interrupciones/Registro_IVEC/Registro_IVEC.srcs/sources_1/new/Registro_IVEC.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'Registro_AUTO' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Interrupciones/Registro_AUTO/Registro_AUTO.srcs/sources_1/new/Registro_AUTO.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'Registro_AUTO' (0#1) [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Interrupciones/Registro_AUTO/Registro_AUTO.srcs/sources_1/new/Registro_AUTO.vhd:44]
+INFO: [Synth 8-638] synthesizing module 'Unidad_Microprogramas' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Unidad_Control/Unidad_Microprograma/Unidad_Microprograma.srcs/sources_1/new/Unidad_Microprogramas.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'Contador_Zona' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Unidad_Control/Unidad_Microprograma/Unidad_Microprograma.srcs/sources_1/new/Contador_Zona.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'Contador_Zona' (0#1) [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Unidad_Control/Unidad_Microprograma/Unidad_Microprograma.srcs/sources_1/new/Contador_Zona.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'Selector_Zona' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Unidad_Control/Unidad_Microprograma/Unidad_Microprograma.srcs/sources_1/new/Selector_Zona.vhd:51]
+INFO: [Synth 8-638] synthesizing module 'Registro_Instruccion' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Registros/Registro_Instruccion/Registro_Instruccion.srcs/sources_1/new/Registro_Instruccion.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'Registro_Instruccion' (0#1) [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Registros/Registro_Instruccion/Registro_Instruccion.srcs/sources_1/new/Registro_Instruccion.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'Selector_Zona' (0#1) [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Unidad_Control/Unidad_Microprograma/Unidad_Microprograma.srcs/sources_1/new/Selector_Zona.vhd:51]
+INFO: [Synth 8-638] synthesizing module 'Memory' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Unidad_Control/Unidad_Microprograma/Unidad_Microprograma.srcs/sources_1/new/Memory.vhd:44]
+INFO: [Synth 8-3491] module 'dist_mem_gen_1' declared at 'C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.runs/synth_1/.Xil/Vivado-26208-MSI/realtime/dist_mem_gen_1_stub.vhdl:6' bound to instance 'your_instance_name' of component 'dist_mem_gen_1' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Unidad_Control/Unidad_Microprograma/Unidad_Microprograma.srcs/sources_1/new/Memory.vhd:54]
+INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_1' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.runs/synth_1/.Xil/Vivado-26208-MSI/realtime/dist_mem_gen_1_stub.vhdl:14]
+INFO: [Synth 8-256] done synthesizing module 'Memory' (0#1) [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Unidad_Control/Unidad_Microprograma/Unidad_Microprograma.srcs/sources_1/new/Memory.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'Unidad_Microprogramas' (0#1) [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Unidad_Control/Unidad_Microprograma/Unidad_Microprograma.srcs/sources_1/new/Unidad_Microprogramas.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'Condicionales_6_91' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Unidad_Control/Condicionales_6-91/Condicionales_6-91.srcs/sources_1/new/Condicionales_6_91.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'Condicionales_6_91' (0#1) [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Unidad_Control/Condicionales_6-91/Condicionales_6-91.srcs/sources_1/new/Condicionales_6_91.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'Vector_Inicio' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Unidad_Control/Vector_Inicio/Vector_Inicio.srcs/sources_1/new/Vector_Inicio.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'Vector_Inicio' (0#1) [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Unidad_Control/Vector_Inicio/Vector_Inicio.srcs/sources_1/new/Vector_Inicio.vhd:44]
+INFO: [Synth 8-638] synthesizing module 'Sincronizacion_BREQ' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Unidad_Control/Sincronizacion_senal_BREQ/Sincronizacion_senal_BREQ.srcs/sources_1/new/Sincronizacion_BREQ.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'Sincronizacion_BREQ' (0#1) [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Unidad_Control/Sincronizacion_senal_BREQ/Sincronizacion_senal_BREQ.srcs/sources_1/new/Sincronizacion_BREQ.vhd:53]
+INFO: [Synth 8-638] synthesizing module 'Detener_SUC' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Unidad_Control/Detener_SUC/Detener_SUC.srcs/sources_1/new/Detener_SUC.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'Detener_SUC' (0#1) [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Unidad_Control/Detener_SUC/Detener_SUC.srcs/sources_1/new/Detener_SUC.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'Control_Buses' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Unidad_Control/Control_Buses/Control_Buses.srcs/sources_1/new/Control_Buses.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'Control_Buses' (0#1) [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Unidad_Control/Control_Buses/Control_Buses.srcs/sources_1/new/Control_Buses.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'Selector_Interrupcion' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Unidad_Control/Selector_Interrupcion/Selector_Interrupcion.srcs/sources_1/new/Selector_Interrupcion.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'Selector_Interrupcion' (0#1) [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Unidad_Control/Selector_Interrupcion/Selector_Interrupcion.srcs/sources_1/new/Selector_Interrupcion.vhd:46]
+INFO: [Synth 8-638] synthesizing module 'Secuencial_SUC' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Unidad_Control/SUC/SUC.srcs/sources_1/new/SUC.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'Secuencial_SUC' (0#1) [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Unidad_Control/SUC/SUC.srcs/sources_1/new/SUC.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'Unidad_Control' (0#1) [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Unidad_Control/Unidad_Control/Unidad_Control.srcs/sources_1/new/Unidad_Control.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'Arquitectura_Fisica' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Registros/Conexion_Registros/Conexion_Registros.srcs/sources_1/new/Arquitectura_Fisica.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'Registro_8_bits' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Registros/Registro_8_bits/Registro_8_bits.srcs/sources_1/new/Registro_8_bits.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'Registro_8_bits' (0#1) [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Registros/Registro_8_bits/Registro_8_bits.srcs/sources_1/new/Registro_8_bits.vhd:44]
+INFO: [Synth 8-638] synthesizing module 'Registro_16_bits' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Registros/Registro_16_bits/Registro_16_bits.srcs/sources_1/new/Registro_16_bits.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'Registro_16_bits' (0#1) [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Registros/Registro_16_bits/Registro_16_bits.srcs/sources_1/new/Registro_16_bits.vhd:44]
+INFO: [Synth 8-638] synthesizing module 'Registro_Contador_16bits_CargaSincrona' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Registros/Registro_Contador_16bits_CargaSincrona/Registro_Contador_16bits_CargaSincrona.srcs/sources_1/new/Registro_Contador_16bits_CargaSincrona.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'Registro_Contador_16bits_CargaSincrona' (0#1) [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Registros/Registro_Contador_16bits_CargaSincrona/Registro_Contador_16bits_CargaSincrona.srcs/sources_1/new/Registro_Contador_16bits_CargaSincrona.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'PSW' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Registros/PSW/PSW.srcs/sources_1/new/PSW.vhd:81]
+INFO: [Synth 8-638] synthesizing module 'ZERO_Y_CARRY' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Registros/PSW/PSW.srcs/sources_1/new/ZERO_Y_CARRY.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'ZERO_Y_CARRY' (0#1) [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Registros/PSW/PSW.srcs/sources_1/new/ZERO_Y_CARRY.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'Registros' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Registros/PSW/PSW.srcs/sources_1/new/Registros.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'Registros' (0#1) [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Registros/PSW/PSW.srcs/sources_1/new/Registros.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'PSW' (0#1) [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Registros/PSW/PSW.srcs/sources_1/new/PSW.vhd:81]
+INFO: [Synth 8-638] synthesizing module 'Registro_Auxiliar_8bits' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Registros/Registro_Auxiliar_8bits/Registro_Auxiliar_8bits.srcs/sources_1/new/Registro_Auxiliar_8bits.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'Registro_Auxiliar_8bits' (0#1) [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Registros/Registro_Auxiliar_8bits/Registro_Auxiliar_8bits.srcs/sources_1/new/Registro_Auxiliar_8bits.vhd:46]
+INFO: [Synth 8-638] synthesizing module 'Registro_Direcciones_AR' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Registros/Registro_Direcciones_AR/Registro_Direcciones_AR.srcs/sources_1/new/Registro_Direcciones_AR.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'Registro_Direcciones_AR' (0#1) [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Registros/Registro_Direcciones_AR/Registro_Direcciones_AR.srcs/sources_1/new/Registro_Direcciones_AR.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'Registro_de_Datos' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Registros/Registro_de_Datos/Registro_de_Datos.srcs/sources_1/new/Regsitro_de_Datos.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'BUFFER_244' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Registros/Registro_de_Datos/Registro_de_Datos.srcs/sources_1/new/74xx244.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'BUFFER_244' (0#1) [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Registros/Registro_de_Datos/Registro_de_Datos.srcs/sources_1/new/74xx244.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'Registro_de_Datos' (0#1) [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Registros/Registro_de_Datos/Registro_de_Datos.srcs/sources_1/new/Regsitro_de_Datos.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'Registro_Control_CR' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Registros/Registro_Control_CR/Registro_Control_CR.srcs/sources_1/new/Registro_Control_CR.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'Registro_Control_CR' (0#1) [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Registros/Registro_Control_CR/Registro_Control_CR.srcs/sources_1/new/Registro_Control_CR.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'Unidad_Logica_Aritmetica' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Registros/Unidad_Logica_Aritmetica/Unidad_Logica_Aritmetica.srcs/sources_1/new/Unidad_Logica_Aritmetica.vhd:51]
+INFO: [Synth 8-226] default block is never used [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Registros/Unidad_Logica_Aritmetica/Unidad_Logica_Aritmetica.srcs/sources_1/new/Unidad_Logica_Aritmetica.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'Unidad_Logica_Aritmetica' (0#1) [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Registros/Unidad_Logica_Aritmetica/Unidad_Logica_Aritmetica.srcs/sources_1/new/Unidad_Logica_Aritmetica.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'Arquitectura_Fisica' (0#1) [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/Registros/Conexion_Registros/Conexion_Registros.srcs/sources_1/new/Arquitectura_Fisica.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'HTDI20' (0#1) [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.srcs/sources_1/new/HTDI20.vhd:59]
+WARNING: [Synth 8-7129] Port ICB[110] in module Arquitectura_Fisica is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ICB[109] in module Arquitectura_Fisica is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ICB[108] in module Arquitectura_Fisica is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ICB[107] in module Arquitectura_Fisica is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ICB[106] in module Arquitectura_Fisica is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ICB[98] in module Arquitectura_Fisica is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ICB[97] in module Arquitectura_Fisica is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ICB[96] in module Arquitectura_Fisica is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ICB[95] in module Arquitectura_Fisica is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ICB[94] in module Arquitectura_Fisica is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ICB[93] in module Arquitectura_Fisica is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ICB[92] in module Arquitectura_Fisica is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ICB[91] in module Arquitectura_Fisica is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ICB[90] in module Arquitectura_Fisica is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ICB[89] in module Arquitectura_Fisica is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ICB[88] in module Arquitectura_Fisica is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ICB[13] in module Arquitectura_Fisica is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ICB[12] in module Arquitectura_Fisica is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ICB[11] in module Arquitectura_Fisica is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ROMB[7] in module Condicionales_6_91 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ROMB[6] in module Condicionales_6_91 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ROMB[5] in module Condicionales_6_91 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ROMB[4] in module Condicionales_6_91 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ROMB[3] in module Condicionales_6_91 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ROMB[2] in module Condicionales_6_91 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ROMB[1] in module Condicionales_6_91 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ROMB[0] in module Condicionales_6_91 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LCB_IN[4] in module Unidad_Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RXD in module HTDI20 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 1419.848 ; gain = 553.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 1419.848 ; gain = 553.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 1419.848 ; gain = 553.266
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1419.848 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.gen/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1/dist_mem_gen_1_in_context.xdc] for cell 'UC/Uni_Micropro/UCROM/your_instance_name'
+Finished Parsing XDC File [c:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.gen/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1/dist_mem_gen_1_in_context.xdc] for cell 'UC/Uni_Micropro/UCROM/your_instance_name'
+Parsing XDC File [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.srcs/constrs_1/new/CMOD.xdc]
+WARNING: [Vivado 12-507] No nets matched 'LCB_IN_IBUF[0]'. [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.srcs/constrs_1/new/CMOD.xdc:6]
+WARNING: [Vivado 12-507] No nets matched 'LCB_IN_IBUF[3]'. [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.srcs/constrs_1/new/CMOD.xdc:7]
+Finished Parsing XDC File [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.srcs/constrs_1/new/CMOD.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.srcs/constrs_1/new/CMOD.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/HTDI20_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.srcs/constrs_1/new/CMOD.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/HTDI20_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/HTDI20_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1517.766 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1517.766 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:37 . Memory (MB): peak = 1517.766 ; gain = 651.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:37 . Memory (MB): peak = 1517.766 ; gain = 651.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for UC/Uni_Micropro/UCROM/your_instance_name. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:37 . Memory (MB): peak = 1517.766 ; gain = 651.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:38 . Memory (MB): peak = 1517.766 ; gain = 651.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      9 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 4     
+	                8 Bit    Registers := 14    
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 19    
++---Muxes : 
+	   2 Input   16 Bit        Muxes := 17    
+	   3 Input   16 Bit        Muxes := 6     
+	  16 Input   10 Bit        Muxes := 1     
+	  16 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 14    
+	   5 Input    8 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 4     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 21    
+	   4 Input    1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port LCB_IN[4] in module HTDI20 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RXD in module HTDI20 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:44 . Memory (MB): peak = 1517.766 ; gain = 651.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:56 . Memory (MB): peak = 1517.766 ; gain = 651.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:56 . Memory (MB): peak = 1517.766 ; gain = 651.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:57 . Memory (MB): peak = 1517.766 ; gain = 651.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:01:08 . Memory (MB): peak = 1517.766 ; gain = 651.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:01:08 . Memory (MB): peak = 1517.766 ; gain = 651.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:01:09 . Memory (MB): peak = 1517.766 ; gain = 651.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:01:09 . Memory (MB): peak = 1517.766 ; gain = 651.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:01:09 . Memory (MB): peak = 1517.766 ; gain = 651.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:01:09 . Memory (MB): peak = 1517.766 ; gain = 651.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |dist_mem_gen_1 |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+--------------------+------+
+|      |Cell                |Count |
++------+--------------------+------+
+|1     |dist_mem_gen_1_bbox |     1|
+|2     |BUFG                |     2|
+|3     |CARRY4              |    23|
+|4     |LUT1                |    25|
+|5     |LUT2                |   180|
+|6     |LUT3                |   107|
+|7     |LUT4                |   104|
+|8     |LUT5                |    33|
+|9     |LUT6                |   164|
+|10    |MUXF7               |     1|
+|11    |FDCE                |    18|
+|12    |FDPE                |    12|
+|13    |FDRE                |   244|
+|14    |FDSE                |     1|
+|15    |LDC                 |     8|
+|16    |IBUF                |     5|
+|17    |IOBUF               |     8|
+|18    |OBUF                |    14|
+|19    |OBUFT               |    20|
++------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:01:09 . Memory (MB): peak = 1517.766 ; gain = 651.184
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:01:04 . Memory (MB): peak = 1517.766 ; gain = 553.266
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:01:09 . Memory (MB): peak = 1517.766 ; gain = 651.184
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1517.766 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 40 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 8 inverter(s) to 8 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1517.766 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 8 instances
+  LDC => LDCE (inverted pins: G): 8 instances
+
+Synth Design complete | Checksum: 1f3afcdb
+INFO: [Common 17-83] Releasing license: Synthesis
+78 Infos, 35 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:01:22 . Memory (MB): peak = 1517.766 ; gain = 1042.207
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1517.766 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.runs/synth_1/HTDI20.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file HTDI20_utilization_synth.rpt -pb HTDI20_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  9 00:44:23 2024...

@@ -1,0 +1,7 @@
+Running: xsim.dir/HTDI_SIMU_behav/xsimk.exe -simmode gui -wdb HTDI_SIMU_behav.wdb -simrunnum 0 -socket 58849
+Design successfully loaded
+Design Loading Memory Usage: 19288 KB (Peak: 19288 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 22880 KB (Peak: 22880 KB)
+Simulation CPU Usage: 15 ms

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Apr  9 00:47:52 2024
+# Process ID: 25348
+# Current directory: C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.runs/impl_1
+# Command line: vivado.exe -log HTDI20.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source HTDI20.tcl -notrace
+# Log file: C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.runs/impl_1/HTDI20.vdi
+# Journal file: C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.runs/impl_1\vivado.jou
+# Running On: MSI, OS: Windows, CPU Frequency: 2208 MHz, CPU Physical cores: 6, Host memory: 17019 MB
+#-----------------------------------------------------------
+source HTDI20.tcl -notrace

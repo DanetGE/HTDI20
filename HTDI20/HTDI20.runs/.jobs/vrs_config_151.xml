@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="Sincronizacion_Senal_BREQ_synth_1" LaunchDir="C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.runs/Sincronizacion_Senal_BREQ_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="Secuencial_SUC_synth_1" LaunchDir="C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.runs/Secuencial_SUC_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="Control_Buses_synth_1" LaunchDir="C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.runs/Control_Buses_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="Selector_Interrupcion_synth_1" LaunchDir="C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.runs/Selector_Interrupcion_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="Detener_SUC_synth_1" LaunchDir="C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.runs/Detener_SUC_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="Vector_Inicio_synth_1" LaunchDir="C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.runs/Vector_Inicio_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="Control_senal_INT_synth_1" LaunchDir="C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.runs/Control_senal_INT_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="Registro_IVEC_synth_1" LaunchDir="C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.runs/Registro_IVEC_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="Registro_AUTO_synth_1" LaunchDir="C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.runs/Registro_AUTO_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="Tiempos_Espera_6_10_synth_1" LaunchDir="C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.runs/Tiempos_Espera_6_10_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="Condicionales_6_91_synth_1" LaunchDir="C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.runs/Condicionales_6_91_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="Controlador_UART_synth_1" LaunchDir="C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.runs/Controlador_UART_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="Registro_8_bits_synth_1" LaunchDir="C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.runs/Registro_8_bits_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="Registro_16_bits_synth_1" LaunchDir="C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.runs/Registro_16_bits_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="Registro_Contador_16bits_CargaSincrona_synth_1" LaunchDir="C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.runs/Registro_Contador_16bits_CargaSincrona_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="PSW_synth_1" LaunchDir="C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.runs/PSW_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="Registro_Auxiliar_8bits_synth_1" LaunchDir="C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.runs/Registro_Auxiliar_8bits_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="Registro_Direcciones_AR_synth_1" LaunchDir="C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.runs/Registro_Direcciones_AR_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="Registro_de_Datos_synth_1" LaunchDir="C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.runs/Registro_de_Datos_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="Registro_Control_CR_synth_1" LaunchDir="C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.runs/Registro_Control_CR_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="Unidad_Logica_Aritmetica_synth_1" LaunchDir="C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.runs/Unidad_Logica_Aritmetica_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/4_Carrera/TFG/Vivado2/HTDI20/HTDI20.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="Sincronizacion_Senal_BREQ_synth_1"/>
+		<Parent Id="Secuencial_SUC_synth_1"/>
+		<Parent Id="Control_Buses_synth_1"/>
+		<Parent Id="Selector_Interrupcion_synth_1"/>
+		<Parent Id="Detener_SUC_synth_1"/>
+		<Parent Id="Vector_Inicio_synth_1"/>
+		<Parent Id="Control_senal_INT_synth_1"/>
+		<Parent Id="Registro_IVEC_synth_1"/>
+		<Parent Id="Registro_AUTO_synth_1"/>
+		<Parent Id="Tiempos_Espera_6_10_synth_1"/>
+		<Parent Id="Condicionales_6_91_synth_1"/>
+		<Parent Id="Controlador_UART_synth_1"/>
+		<Parent Id="Registro_8_bits_synth_1"/>
+		<Parent Id="Registro_16_bits_synth_1"/>
+		<Parent Id="Registro_Contador_16bits_CargaSincrona_synth_1"/>
+		<Parent Id="PSW_synth_1"/>
+		<Parent Id="Registro_Auxiliar_8bits_synth_1"/>
+		<Parent Id="Registro_Direcciones_AR_synth_1"/>
+		<Parent Id="Registro_de_Datos_synth_1"/>
+		<Parent Id="Registro_Control_CR_synth_1"/>
+		<Parent Id="Unidad_Logica_Aritmetica_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+		<Parameter Name="general.shortenLongPath" Val="true" Type="bool"/>
+	</Parameters>
+	<ProductInfo Name="vivado"/>
+</Runs>
+
