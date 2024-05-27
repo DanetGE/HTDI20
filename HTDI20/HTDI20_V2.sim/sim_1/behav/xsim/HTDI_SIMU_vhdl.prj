@@ -1,0 +1,39 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../Unidad_Control/Unidad_Microprograma/Unidad_Microprograma.gen/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0_sim_netlist.vhdl" \
+"../../../../../Registros/Registro_de_Datos/Registro_de_Datos.srcs/sources_1/new/74xx244.vhd" \
+"../../../../../Registros/Registro_8_bits/Registro_8_bits.srcs/sources_1/new/Registro_8_bits.vhd" \
+"../../../../../Registros/Registro_16_bits/Registro_16_bits.srcs/sources_1/new/Registro_16_bits.vhd" \
+"../../../../../Registros/Registro_Contador_16bits_CargaSincrona/Registro_Contador_16bits_CargaSincrona.srcs/sources_1/new/Registro_Contador_16bits_CargaSincrona.vhd" \
+"../../../../../Registros/PSW/PSW.srcs/sources_1/new/ZERO_Y_CARRY.vhd" \
+"../../../../../Registros/PSW/PSW.srcs/sources_1/new/Registros.vhd" \
+"../../../../../Registros/PSW/PSW.srcs/sources_1/new/PSW.vhd" \
+"../../../../../Registros/Registro_Auxiliar_8bits/Registro_Auxiliar_8bits.srcs/sources_1/new/Registro_Auxiliar_8bits.vhd" \
+"../../../../../Registros/Registro_Direcciones_AR/Registro_Direcciones_AR.srcs/sources_1/new/Registro_Direcciones_AR.vhd" \
+"../../../../../Registros/Registro_de_Datos/Registro_de_Datos.srcs/sources_1/new/Regsitro_de_Datos.vhd" \
+"../../../../../Registros/Registro_Control_CR/Registro_Control_CR.srcs/sources_1/new/Registro_Control_CR.vhd" \
+"../../../../../Registros/Unidad_Logica_Aritmetica/Unidad_Logica_Aritmetica.srcs/sources_1/new/Unidad_Logica_Aritmetica.vhd" \
+"../../../../../Registros/Conexion_Registros/Conexion_Registros.srcs/sources_1/new/Arquitectura_Fisica.vhd" \
+"../../../../../Unidad_Control/Condicionales_6-91/Condicionales_6-91.srcs/sources_1/new/Condicionales_6_91.vhd" \
+"../../../../../Unidad_Control/Unidad_Microprograma/Unidad_Microprograma.srcs/sources_1/new/Contador_Zona.vhd" \
+"../../../../../Unidad_Control/Control_Buses/Control_Buses.srcs/sources_1/new/Control_Buses.vhd" \
+"../../../../../Interrupciones/Control_senal_INT/Control_senal_INT.srcs/sources_1/new/Control_senal_INT.vhd" \
+"../../../../../Unidad_Control/Detener_SUC/Detener_SUC.srcs/sources_1/new/Detener_SUC.vhd" \
+"../../../../../Interrupciones/Registro_IVEC/Registro_IVEC.srcs/sources_1/new/Registro_IVEC.vhd" \
+"../../../../../Interrupciones/Registro_AUTO/Registro_AUTO.srcs/sources_1/new/Registro_AUTO.vhd" \
+"../../../../../Registros/Registro_Instruccion/Registro_Instruccion.srcs/sources_1/new/Registro_Instruccion.vhd" \
+"../../../../../Unidad_Control/Unidad_Microprograma/Unidad_Microprograma.srcs/sources_1/new/Selector_Zona.vhd" \
+"../../../../../Unidad_Control/Unidad_Microprograma/Unidad_Microprograma.srcs/sources_1/new/Memory.vhd" \
+"../../../../../Unidad_Control/Unidad_Microprograma/Unidad_Microprograma.srcs/sources_1/new/Unidad_Microprogramas.vhd" \
+"../../../../../Unidad_Control/Tiempos_Espera/Tiempos_Espera.srcs/sources_1/new/Tiempos_Espera.vhd" \
+"../../../../../Unidad_Control/Vector_Inicio/Vector_Inicio.srcs/sources_1/new/Vector_Inicio.vhd" \
+"../../../../../Unidad_Control/Sincronizacion_senal_BREQ/Sincronizacion_senal_BREQ.srcs/sources_1/new/Sincronizacion_BREQ.vhd" \
+"../../../../../Unidad_Control/Sincronizacion_senal_BREQ/Sincronizacion_senal_BREQ.srcs/sources_1/new/Sincronizacion_Senal_BREQ.vhd" \
+"../../../../../Unidad_Control/Selector_Interrupcion/Selector_Interrupcion.srcs/sources_1/new/Selector_Interrupcion.vhd" \
+"../../../../../Unidad_Control/SUC/SUC.srcs/sources_1/new/SUC.vhd" \
+"../../../../../Unidad_Control/Unidad_Control/Unidad_Control.srcs/sources_1/new/Unidad_Control.vhd" \
+"../../../../HTDI20.srcs/sources_1/new/HTDI20.vhd" \
+"../../../../HTDI20.srcs/sim_1/new/HTDI_SIMU.vhd" \
+
+# Do not sort compile order
+nosort
