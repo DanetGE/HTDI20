@@ -1,0 +1,163 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Tue Jun 11 22:01:21 2024
+| Host         : MSI running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file HTDI20_control_sets_placed.rpt
+| Design       : HTDI20
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    85 |
+|    Minimum number of control sets                        |    85 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   372 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    85 |
+| >= 0 to < 4        |    51 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     3 |
+| >= 8 to < 10       |    14 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    17 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             728 |          241 |
+| No           | No                    | Yes                    |              28 |           22 |
+| No           | Yes                   | No                     |              45 |           17 |
+| Yes          | No                    | No                     |              52 |           30 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             183 |           59 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------+------------------------------------------------+------------------+----------------+--------------+
+|                                                                Clock Signal                                                                |                 Enable Signal                |                Set/Reset Signal                | Slice Load Count | Bel Load Count | Bels / Slice |
++--------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------+------------------------------------------------+------------------+----------------+--------------+
+|  CK32MHz_OBUF_BUFG                                                                                                                         | UART_CONTROLLER/MAIN.DIRECCION[13]_i_1_n_0   |                                                |                1 |              1 |         1.00 |
+|  CK32MHz_OBUF_BUFG                                                                                                                         | UART_CONTROLLER/MAIN.DIRECCION[15]_i_1_n_0   |                                                |                1 |              1 |         1.00 |
+|  CK32MHz_OBUF_BUFG                                                                                                                         | UART_CONTROLLER/MAIN.DIRECCION[12]_i_1_n_0   |                                                |                1 |              1 |         1.00 |
+| ~LCB_IN_IBUF_BUFG[0]                                                                                                                       |                                              | UC/SUC/n_RST_SINC_reg                          |                1 |              1 |         1.00 |
+|  UC/Uni_Micropro/UCROM/WR_CARRY                                                                                                            |                                              | UC/Uni_Micropro/UCROM/bbstub_douta[64]         |                1 |              1 |         1.00 |
+|  UC/Uni_Micropro/UCROM/WR_CARRY                                                                                                            |                                              | UC/Uni_Micropro/UCROM/bbstub_douta[65]         |                1 |              1 |         1.00 |
+|  UC/Uni_Micropro/UCROM/WR_ZERO                                                                                                             |                                              | UC/Uni_Micropro/UCROM/bbstub_douta[67]         |                1 |              1 |         1.00 |
+|  UC/Uni_Micropro/UCROM/WR_ZERO                                                                                                             |                                              | UC/Uni_Micropro/UCROM/bbstub_douta[68]         |                1 |              1 |         1.00 |
+|  UC/Uni_Micropro/UCROM/UC_ROM/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[62].ram.r/prim_init.ram/douta[0] |                                              | Arq_Fisica/PSW_FINAL/IM_FLAG/Q_reg_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  UC/Uni_Micropro/UCROM/UC_ROM/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_init.ram/douta[0]  |                                              | UC/Sinc_BREQ/n_BREQS                           |                1 |              1 |         1.00 |
+|  CK32MHz_OBUF_BUFG                                                                                                                         | UART_CONTROLLER/MAIN.DIRECCION[1]_i_1_n_0    |                                                |                1 |              1 |         1.00 |
+|  UC/Uni_Micropro/UCROM/UC_ROM/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[62].ram.r/prim_init.ram/douta[0] |                                              | Arq_Fisica/PSW_FINAL/IM_FLAG/Q_reg_LDC_i_1_n_0 |                1 |              1 |         1.00 |
+|  UC/Uni_Micropro/UCROM/UC_ROM/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[62].ram.r/prim_init.ram/douta[0] |                                              | Arq_Fisica/PSW_FINAL/F1_FLAG/Q_reg_LDC_i_1_n_0 |                1 |              1 |         1.00 |
+|  UC/Uni_Micropro/UCROM/UC_ROM/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[62].ram.r/prim_init.ram/douta[0] |                                              | Arq_Fisica/PSW_FINAL/F1_FLAG/Q_reg_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  UC/Uni_Micropro/UCROM/UC_ROM/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[62].ram.r/prim_init.ram/douta[0] |                                              | Arq_Fisica/PSW_FINAL/F0_FLAG/Q_reg_LDC_i_1_n_0 |                1 |              1 |         1.00 |
+|  UC/Uni_Micropro/UCROM/UC_ROM/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[62].ram.r/prim_init.ram/douta[0] |                                              | Arq_Fisica/PSW_FINAL/F0_FLAG/Q_reg_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  UC/Uni_Micropro/UCROM/UC_ROM/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[62].ram.r/prim_init.ram/douta[0] |                                              | Arq_Fisica/PSW_FINAL/F2_FLAG/Q_reg_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  UC/Uni_Micropro/UCROM/UC_ROM/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[62].ram.r/prim_init.ram/douta[0] |                                              | Arq_Fisica/PSW_FINAL/IF_FLAG/Q_reg_LDC_i_1_n_0 |                1 |              1 |         1.00 |
+|  UC/Uni_Micropro/UCROM/UC_ROM/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[62].ram.r/prim_init.ram/douta[0] |                                              | Arq_Fisica/PSW_FINAL/IF_FLAG/Q_reg_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  UC/Uni_Micropro/UCROM/UC_ROM/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[62].ram.r/prim_init.ram/douta[0] |                                              | Arq_Fisica/PSW_FINAL/F2_FLAG/Q_reg_LDC_i_1_n_0 |                1 |              1 |         1.00 |
+|  UC/Uni_Micropro/UCROM/UC_ROM/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[62].ram.r/prim_init.ram/douta[0] |                                              | Arq_Fisica/PSW_FINAL/F3_FLAG/Q_reg_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  UC/Uni_Micropro/UCROM/UC_ROM/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[62].ram.r/prim_init.ram/douta[0] |                                              | Arq_Fisica/PSW_FINAL/F3_FLAG/Q_reg_LDC_i_1_n_0 |                1 |              1 |         1.00 |
+| ~UC/Uni_Micropro/UCROM/UC_ROM/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[64].ram.r/prim_init.ram/douta[0] |                                              | UC/Uni_Micropro/UCROM/bbstub_douta[65]         |                1 |              1 |         1.00 |
+| ~UC/Uni_Micropro/UCROM/UC_ROM/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[69].ram.r/prim_init.ram/douta[0] |                                              | Arq_Fisica/PSW_FINAL/F0_FLAG/Q_reg_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+| ~UC/Uni_Micropro/UCROM/UC_ROM/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[71].ram.r/prim_init.ram/douta[0] |                                              | Arq_Fisica/PSW_FINAL/F1_FLAG/Q_reg_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+| ~UC/Uni_Micropro/UCROM/UC_ROM/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[73].ram.r/prim_init.ram/douta[0] |                                              | Arq_Fisica/PSW_FINAL/F2_FLAG/Q_reg_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+| ~UC/Uni_Micropro/UCROM/UC_ROM/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[75].ram.r/prim_init.ram/douta[0] |                                              | Arq_Fisica/PSW_FINAL/F3_FLAG/Q_reg_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  CK32MHz_OBUF_BUFG                                                                                                                         | UART_CONTROLLER/MAIN.DATA[0]_i_1_n_0         |                                                |                1 |              1 |         1.00 |
+| ~UC/Uni_Micropro/UCROM/UC_ROM/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[77].ram.r/prim_init.ram/douta[0] |                                              | Arq_Fisica/PSW_FINAL/IM_FLAG/Q_reg_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  CK32MHz_OBUF_BUFG                                                                                                                         | UART_CONTROLLER/MAIN.DATA[5]_i_1_n_0         |                                                |                1 |              1 |         1.00 |
+|  CK32MHz_OBUF_BUFG                                                                                                                         | UART_CONTROLLER/MAIN.DATA[7]_i_1_n_0         |                                                |                1 |              1 |         1.00 |
+|  CK32MHz_OBUF_BUFG                                                                                                                         | UART_CONTROLLER/MAIN.DATA[1]_i_1_n_0         |                                                |                1 |              1 |         1.00 |
+|  CK32MHz_OBUF_BUFG                                                                                                                         | UART_CONTROLLER/MAIN.DATA[3]_i_1_n_0         |                                                |                1 |              1 |         1.00 |
+| ~UC/Uni_Micropro/UCROM/UC_ROM/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[82].ram.r/prim_init.ram/douta[0] |                                              | Arq_Fisica/PSW_FINAL/IF_FLAG/Q_reg_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  CK32MHz_OBUF_BUFG                                                                                                                         | UART_CONTROLLER/MAIN.DATA[2]_i_1_n_0         |                                                |                1 |              1 |         1.00 |
+|  CK32MHz_OBUF_BUFG                                                                                                                         | UART_CONTROLLER/MAIN.DATA[4]_i_1_n_0         |                                                |                1 |              1 |         1.00 |
+|  CK32MHz_OBUF_BUFG                                                                                                                         | UART_CONTROLLER/MAIN.DATA[6]_i_1_n_0         |                                                |                1 |              1 |         1.00 |
+|  CK32MHz_OBUF_BUFG                                                                                                                         | UART_CONTROLLER/MAIN.DIRECCION[3]_i_1_n_0    |                                                |                1 |              1 |         1.00 |
+|  CK32MHz_OBUF_BUFG                                                                                                                         | UART_CONTROLLER/MAIN.DIRECCION[5]_i_1_n_0    |                                                |                1 |              1 |         1.00 |
+|  CK32MHz_OBUF_BUFG                                                                                                                         | UART_CONTROLLER/MAIN.DIRECCION[0]_i_1_n_0    |                                                |                1 |              1 |         1.00 |
+|  CK32MHz_OBUF_BUFG                                                                                                                         | UART_CONTROLLER/MAIN.DIRECCION[6]_i_1_n_0    |                                                |                1 |              1 |         1.00 |
+|  CK32MHz_OBUF_BUFG                                                                                                                         | UART_CONTROLLER/MAIN.DIRECCION[9]_i_1_n_0    |                                                |                1 |              1 |         1.00 |
+| ~UC/Uni_Micropro/UCROM/UC_ROM/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[67].ram.r/prim_init.ram/douta[0] |                                              | UC/Uni_Micropro/UCROM/bbstub_douta[68]         |                1 |              1 |         1.00 |
+|  CK32MHz_OBUF_BUFG                                                                                                                         | UART_CONTROLLER/MAIN.DIRECCION[4]_i_1_n_0    |                                                |                1 |              1 |         1.00 |
+|  CK32MHz_OBUF_BUFG                                                                                                                         | UART_CONTROLLER/MAIN.DIRECCION[14]_i_1_n_0   |                                                |                1 |              1 |         1.00 |
+|  CK32MHz_OBUF_BUFG                                                                                                                         | UART_CONTROLLER/MAIN.DIRECCION[8]_i_1_n_0    |                                                |                1 |              1 |         1.00 |
+|  CK32MHz_OBUF_BUFG                                                                                                                         | UART_CONTROLLER/MAIN.DIRECCION[7]_i_1_n_0    |                                                |                1 |              1 |         1.00 |
+|  CK32MHz_OBUF_BUFG                                                                                                                         | UART_CONTROLLER/MAIN.DIRECCION[2]_i_1_n_0    |                                                |                1 |              1 |         1.00 |
+|  CK32MHz_OBUF_BUFG                                                                                                                         | UART_CONTROLLER/MAIN.DIRECCION[11]_i_1_n_0   |                                                |                1 |              1 |         1.00 |
+|  CK32MHz_OBUF_BUFG                                                                                                                         | UART_CONTROLLER/MAIN.DIRECCION[10]_i_1_n_0   |                                                |                1 |              1 |         1.00 |
+|  UC/Sinc_BREQ/s_QB4_reg_0                                                                                                                  |                                              | UC/RST_SINC/p_0_in                             |                1 |              2 |         2.00 |
+|  UC/Sinc_BREQ/CK_CZ                                                                                                                        |                                              | UC/SUC/n_RST_SINC_reg_0                        |                1 |              6 |         6.00 |
+|  CK32MHz_OBUF_BUFG                                                                                                                         |                                              | UC/RST_SINC/p_0_in                             |                3 |              7 |         2.33 |
+|  UC/Uni_Micropro/UCROM/UC_ROM/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[91].ram.r/prim_init.ram/douta[0] |                                              |                                                |                4 |              7 |         1.75 |
+|  UC/Uni_Micropro/UCROM/UC_ROM/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[54].ram.r/prim_init.ram/douta[0] |                                              |                                                |                1 |              8 |         8.00 |
+|  UC/Uni_Micropro/UCROM/UC_ROM/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[56].ram.r/prim_init.ram/douta[0] |                                              |                                                |                3 |              8 |         2.67 |
+|  UC/Uni_Micropro/UCROM/UC_ROM/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[34].ram.r/prim_init.ram/douta[0] |                                              |                                                |                3 |              8 |         2.67 |
+|  UC/Uni_Micropro/UCROM/UC_ROM/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[37].ram.r/prim_init.ram/douta[0] |                                              |                                                |                3 |              8 |         2.67 |
+|  UC/Uni_Micropro/UCROM/UC_ROM/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[40].ram.r/prim_init.ram/douta[0] |                                              |                                                |                4 |              8 |         2.00 |
+|  UC/Uni_Micropro/UCROM/UC_ROM/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[31].ram.r/prim_init.ram/douta[0] |                                              |                                                |                4 |              8 |         2.00 |
+|  UC/Uni_Micropro/UCROM/UC_ROM/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[25].ram.r/prim_init.ram/douta[0] |                                              |                                                |                5 |              8 |         1.60 |
+|  UC/Uni_Micropro/UCROM/UC_ROM/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[28].ram.r/prim_init.ram/douta[0] |                                              |                                                |                2 |              8 |         4.00 |
+|  CK32MHz_OBUF_BUFG                                                                                                                         | UART_CONTROLLER/MAIN.DATA_REG[0][7]_i_1_n_0  |                                                |                2 |              8 |         4.00 |
+|  UC/Uni_Micropro/UCROM/UC_ROM/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[52].ram.r/prim_init.ram/douta[0] |                                              |                                                |                2 |              8 |         4.00 |
+|  UC/Uni_Micropro/UCROM/UC_ROM/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[88].ram.r/prim_init.ram/douta[0] |                                              |                                                |                2 |              8 |         4.00 |
+|  UC/Uni_Micropro/UCROM/UC_ROM/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[89].ram.r/prim_init.ram/douta[0] |                                              |                                                |                3 |              8 |         2.67 |
+|  UC/Uni_Micropro/UCROM/UC_ROM/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/prim_init.ram/douta[0]  |                                              |                                                |                5 |              8 |         1.60 |
+|  UC/Uni_Micropro/UCROM/UC_ROM/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/douta[0]  |                                              |                                                |                3 |              8 |         2.67 |
+|  UC/Uni_Micropro/UCROM/UC_ROM/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[58].ram.r/prim_init.ram/douta[0] |                                              |                                                |                7 |             16 |         2.29 |
+|  UC/Uni_Micropro/UCROM/UC_ROM/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[45].ram.r/prim_init.ram/douta[0] |                                              |                                                |                4 |             16 |         4.00 |
+|  UC/Uni_Micropro/UCROM/UC_ROM/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[49].ram.r/prim_init.ram/douta[0] |                                              |                                                |                4 |             16 |         4.00 |
+|  UC/Uni_Micropro/UCROM/UC_ROM/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_init.ram/douta[0] |                                              |                                                |                4 |             16 |         4.00 |
+|  UC/Uni_Micropro/UCROM/UC_ROM/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[17].ram.r/prim_init.ram/douta[0] |                                              |                                                |                4 |             16 |         4.00 |
+|  UC/Uni_Micropro/UCROM/UC_ROM/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/douta[0]  |                                              |                                                |                7 |             16 |         2.29 |
+|  UC/Uni_Micropro/UCROM/UC_ROM/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[21].ram.r/prim_init.ram/douta[0] |                                              |                                                |                4 |             16 |         4.00 |
+|  UC/Uni_Micropro/UCROM/UC_ROM/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[60].ram.r/prim_init.ram/douta[0] |                                              |                                                |                9 |             16 |         1.78 |
+|  CK32MHz_OBUF_BUFG                                                                                                                         | UART_CONTROLLER/sn_WR3_out                   |                                                |                4 |             20 |         5.00 |
+|  CK32MHz_OBUF_BUFG                                                                                                                         | UART_CONTROLLER/MAIN.DIR_REG[19][15]_i_2_n_0 | UART_CONTROLLER/MAIN.DIR_REG[19][15]_i_1_n_0   |               18 |             24 |         1.33 |
+|  CK32MHz_OBUF_BUFG                                                                                                                         | UART_CONTROLLER/POS                          | UART_CONTROLLER/MAIN.POS[31]_i_1_n_0           |                9 |             31 |         3.44 |
+|  CK32MHz_OBUF_BUFG                                                                                                                         |                                              | UART_CONTROLLER/MAIN.N_CLOCKS[0]_i_1_n_0       |                8 |             32 |         4.00 |
+|  CK32MHz_OBUF_BUFG                                                                                                                         | UART_CONTROLLER/N_CLOCKS1                    | UART_CONTROLLER/MAIN.N_BITS[0]_i_1_n_0         |                8 |             32 |         4.00 |
+|  CK32MHz_OBUF_BUFG                                                                                                                         | UART_CONTROLLER/N_CK_RESET                   | UART_CONTROLLER/sn_RST7_out                    |                8 |             32 |         4.00 |
+|  CK32MHz_OBUF_BUFG                                                                                                                         | UART_CONTROLLER/DATA_REG[19]123_out          | UART_CONTROLLER/N_CK_SAVE                      |                8 |             32 |         4.00 |
+|  CK32MHz_OBUF_BUFG                                                                                                                         | UART_CONTROLLER/MAIN.N_BITS[0]_i_1_n_0       | UART_CONTROLLER/N_BYTES                        |                8 |             32 |         4.00 |
+|  CK32MHz_OBUF_BUFG                                                                                                                         |                                              |                                                |              154 |            489 |         3.18 |
++--------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------+------------------------------------------------+------------------+----------------+--------------+
+
+

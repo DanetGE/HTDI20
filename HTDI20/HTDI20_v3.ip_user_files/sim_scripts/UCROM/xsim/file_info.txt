@@ -1,0 +1,2 @@
+UCROM.v,verilog,xil_defaultlib,../../../ip/UCROM/sim/UCROM.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v
