@@ -1,0 +1,9 @@
+cd C:/TFG/Flex/Compilador_HTDI20
+
+
+flex -o Compilador_HTDI20.yy.c Compilador_HTDI20.l
+
+
+gcc Compilador_HTDI20.yy.c -o Compilador_HTDI20
+
+
