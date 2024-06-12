@@ -121,7 +121,7 @@ BEGIN
     CK32MHZ <= CK_BASE;
     
     LCB_OUT(0) <= sn_WR;
-    LCB_OUT(1) <= sn_RD;
+    LCB_OUT(2) <= sn_RD;
     LCB_OUT(5) <= sn_BACK;
     --LCB_OUT   <= s_LCB_OUT;
 
@@ -152,8 +152,8 @@ BEGIN
                        PORT MAP(IDB     => IDB,
                                 ICB     => ICB,
                                 LCB_OUT_ARQ(0) => sn_WR,
-                                LCB_OUT_ARQ(1) => sn_RD,
-                                LCB_OUT_ARQ(2) => LCB_OUT(2),
+                                LCB_OUT_ARQ(1) => LCB_OUT(1),
+                                LCB_OUT_ARQ(2) => sn_RD,
                                 LCB_OUT_ARQ(3) => LCB_OUT(3),
                                 LDB     => LDB,
                                 LAB     => LAB);
