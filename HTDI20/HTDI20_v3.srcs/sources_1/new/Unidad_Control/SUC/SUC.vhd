@@ -45,6 +45,7 @@ ENTITY Secuencial_SUC IS
            n_OE_BUSQ    : OUT STD_LOGIC;
            n_OE_RI      : OUT STD_LOGIC;
            n_OE_INT     : OUT STD_LOGIC;
+           n_OE_INI_INT : OUT STD_LOGIC;
            n_RST_CZ     : OUT STD_LOGIC
            );
 END Secuencial_SUC;
@@ -53,7 +54,7 @@ END Secuencial_SUC;
 ARCHITECTURE Behavioral OF Secuencial_SUC IS 
 
     -- Se declaran los estados del secuencial
-    type t_estados is (INICIO, BUSQUEDA, EJECUCION, INTERRUPCION);
+    type t_estados is (INICIO, BUSQUEDA, EJECUCION, INTERRUPCION, INI_INT);
     
     --Se declara la señal que indica los estados de la maquina
     SIGNAL s_estado:     t_estados := INICIO;
@@ -98,11 +99,19 @@ BEGIN
                                 IF(n_INTS = '1') THEN 
                                     s_estado <= BUSQUEDA;
                                 ELSIF(n_INTS = '0') THEN 
-                                    s_estado <= INTERRUPCION;
+                                    s_estado <= INI_INT;
                                 END IF;
                             END IF;
                         ELSIF(n_FIN_CI = '1') THEN
                             s_estado <= EJECUCION;
+                        END IF;
+                    
+                    --Se encuentra en el inicio de la interrupción
+                    WHEN INI_INT =>
+                        IF(n_FIN_CI = '0') THEN 
+                            s_estado <= INTERRUPCION;
+                        ELSIF(n_FIN_CI = '1') THEN 
+                            s_estado <= INI_INT;
                         END IF;
                         
                     --Se encuentra en INTERRUPCION cuando falling EDGE CK_SUC
@@ -121,28 +130,39 @@ BEGIN
     SALIDAS: PROCESS(s_estado) BEGIN 
         CASE s_estado IS 
             WHEN INICIO =>
-                n_OE_INI    <= '0';
-                n_OE_BUSQ   <= '1';
-                n_OE_RI     <= '1';
-                n_OE_INT    <= '1';
+                n_OE_INI     <= '0';
+                n_OE_BUSQ    <= '1';
+                n_OE_RI      <= '1';
+                n_OE_INT     <= '1';
+                n_OE_INI_INT <= '1';
                 
             WHEN BUSQUEDA =>
-                n_OE_INI    <= '1';
-                n_OE_BUSQ   <= '0';
-                n_OE_RI     <= '1';
-                n_OE_INT    <= '1';
+                n_OE_INI     <= '1';
+                n_OE_BUSQ    <= '0';
+                n_OE_RI      <= '1';
+                n_OE_INT     <= '1';
+                n_OE_INI_INT <= '1';
                 
             WHEN EJECUCION =>
-                n_OE_INI    <= '1';
-                n_OE_BUSQ   <= '1';
-                n_OE_RI     <= '0';
-                n_OE_INT    <= '1';
+                n_OE_INI     <= '1';
+                n_OE_BUSQ    <= '1';
+                n_OE_RI      <= '0';
+                n_OE_INT     <= '1';
+                n_OE_INI_INT <= '1';
                 
             WHEN INTERRUPCION =>
-                n_OE_INI    <= '1';
-                n_OE_BUSQ   <= '1';
-                n_OE_RI     <= '1';
-                n_OE_INT    <= '0';
+                n_OE_INI     <= '1';
+                n_OE_BUSQ    <= '1';
+                n_OE_RI      <= '1';
+                n_OE_INT     <= '0';
+                n_OE_INI_INT <= '1';
+                
+            WHEN INI_INT =>
+                n_OE_INI     <= '1';
+                n_OE_BUSQ    <= '1';
+                n_OE_RI      <= '1';
+                n_OE_INT     <= '1';
+                n_OE_INI_INT <= '0';
                 
         END CASE;
     END PROCESS SALIDAS;

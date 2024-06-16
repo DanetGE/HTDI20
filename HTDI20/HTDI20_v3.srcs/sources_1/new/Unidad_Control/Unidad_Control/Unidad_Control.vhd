@@ -64,6 +64,7 @@ ARCHITECTURE Behavioral OF Unidad_Control IS
     SIGNAL BACK2:        STD_LOGIC;
     SIGNAL CK_SUC:       STD_LOGIC;
     SIGNAL n_RST_SINC:   STD_LOGIC;
+    SIGNAL n_OE_INI_INT: STD_LOGIC;
 
 BEGIN
     
@@ -122,7 +123,8 @@ BEGIN
                                 n_OE_INI  => ICB(110),
                                 n_OE_AUT  => ICB(109),
                                 C_BUS     => CBUS,
-                                ROMB      => ROMB);   
+                                ROMB      => ROMB,
+                                n_OE_INI_INT   => n_OE_INI_INT);   
     
     --Conexion del circuito de tiempos de espera
     --Tiempos_Espera: ENTITY Tiempos_Espera_6_10
@@ -201,7 +203,8 @@ BEGIN
                                 n_OE_BUSQ => ICB(107),
                                 n_OE_RI   => ICB(13),
                                 n_OE_INT  => n_OE_INT,
-                                n_RST_CZ  => n_RST_CZ);
+                                n_RST_CZ  => n_RST_CZ,
+                                n_OE_INI_INT  => n_OE_INI_INT);
 
     LCB_OUT_CONT(2)  <=  CBUS(0);
     ICB(7)      <=  CBUS(1);

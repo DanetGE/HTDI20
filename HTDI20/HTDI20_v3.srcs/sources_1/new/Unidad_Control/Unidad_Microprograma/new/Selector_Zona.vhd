@@ -35,13 +35,14 @@ USE WORK.ALL;
 ENTITY Selector_Zona IS
     PORT(
         --Se declaran las entradas
-        IDB:          IN  STD_LOGIC_VECTOR (7 DOWNTO 0);
-        WR_IR:      IN  STD_LOGIC;
-        n_OE_IR:    IN  STD_LOGIC;
-        n_OE_BUSQ:  IN  STD_LOGIC;
-        n_OE_VECT:  IN  STD_LOGIC;
-        n_OE_INI:   IN  STD_LOGIC;
-        n_OE_AUT:   IN  STD_LOGIC;
+        IDB:           IN  STD_LOGIC_VECTOR (7 DOWNTO 0);
+        WR_IR:         IN  STD_LOGIC;
+        n_OE_IR:       IN  STD_LOGIC;
+        n_OE_BUSQ:     IN  STD_LOGIC;
+        n_OE_VECT:     IN  STD_LOGIC;
+        n_OE_INI:      IN  STD_LOGIC;
+        n_OE_INI_INT:  IN  STD_LOGIC;
+        n_OE_AUT:      IN  STD_LOGIC;
         
         --Se declaran las salidas
         Q :         OUT STD_LOGIC_VECTOR (7 DOWNTO 0)
@@ -49,7 +50,7 @@ ENTITY Selector_Zona IS
 END Selector_Zona;
 
 ARCHITECTURE Behavioral OF Selector_Zona IS
-    SIGNAL  CONTROL: STD_LOGIC_VECTOR(3 DOWNTO 0);
+    SIGNAL  CONTROL: STD_LOGIC_VECTOR(4 DOWNTO 0);
 BEGIN
 
     --Conexión del registro de instrucción
@@ -59,21 +60,23 @@ BEGIN
                                 n_OE => n_OE_IR,
                                 Q    => Q);
     
-    CONTROL <= n_OE_AUT & n_OE_BUSQ & n_OE_INI & n_OE_VECT;
+    CONTROL <= n_OE_AUT & n_OE_BUSQ & n_OE_INI & n_OE_VECT & n_OE_INI_INT;
     
     --Proceso Principal
-    MAIN:   PROCESS(n_OE_AUT, n_OE_BUSQ, n_OE_INI, n_OE_VECT, CONTROL) BEGIN
+    MAIN:   PROCESS(n_OE_AUT, n_OE_BUSQ, n_OE_INI, n_OE_VECT, CONTROL, n_OE_INI_INT) BEGIN
         
         --Se definen los casos posibles de combinacion de entradas
         CASE (CONTROL)IS
-            WHEN "0111" => 
+            WHEN "01111" => 
                 Q <= x"FC";
-            WHEN "1011" => 
+            WHEN "10111" => 
                 Q <= x"FE";
-            WHEN "1101" => 
+            WHEN "11011" => 
                 Q <= x"FF";
-            WHEN "1110" => 
+            WHEN "11101" => 
                 Q <= x"FD";
+            WHEN "11110" => 
+                Q <= x"FB";
             WHEN OTHERS => 
                 Q <= (OTHERS => 'Z');
         END CASE;

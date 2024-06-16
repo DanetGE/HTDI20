@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date             : Sun Jun 16 15:27:40 2024
+| Date             : Sun Jun 16 16:49:09 2024
 | Host             : MSI running 64-bit major release  (build 9200)
 | Command          : report_power -file HTDI20_power_routed.rpt -pb HTDI20_power_summary_routed.pb -rpx HTDI20_power_routed.rpx
 | Design           : HTDI20
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.100        |
+| Total On-Chip Power (W)  | 0.101        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.025        |
+| Dynamic (W)              | 0.026        |
 | Device Static (W)        | 0.075        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.5         |
@@ -53,18 +53,18 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |     2953 |       --- |             --- |
-|   LUT as Logic |    <0.001 |     1220 |     20800 |            5.87 |
+| Slice Logic    |    <0.001 |     2955 |       --- |             --- |
+|   LUT as Logic |    <0.001 |     1219 |     20800 |            5.86 |
 |   CARRY4       |    <0.001 |      148 |      8150 |            1.82 |
-|   Register     |    <0.001 |     1036 |     41600 |            2.49 |
+|   Register     |    <0.001 |     1037 |     41600 |            2.49 |
 |   BUFG         |    <0.001 |        1 |        32 |            3.13 |
 |   F7/F8 Muxes  |    <0.001 |        2 |     32600 |           <0.01 |
 |   Others       |     0.000 |      259 |       --- |             --- |
-| Signals        |     0.001 |     2149 |       --- |             --- |
+| Signals        |     0.002 |     2150 |       --- |             --- |
 | Block RAM      |     0.010 |     47.5 |        50 |           95.00 |
 | I/O            |     0.012 |       48 |       106 |           45.28 |
 | Static Power   |     0.075 |          |           |                 |
-| Total          |     0.100 |          |           |                 |
+| Total          |     0.101 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,7 +74,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.024 |       0.012 |      0.012 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.024 |       0.013 |      0.012 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.004 |       0.003 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -143,10 +143,10 @@ Table of Contents
 +------------------+-----------+
 | Name             | Power (W) |
 +------------------+-----------+
-| HTDI20           |     0.025 |
+| HTDI20           |     0.026 |
 |   UC             |     0.012 |
 |     Uni_Micropro |     0.012 |
-|       UCROM      |     0.011 |
+|       UCROM      |     0.012 |
 +------------------+-----------+
 
 

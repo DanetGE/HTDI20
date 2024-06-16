@@ -3,8 +3,8 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Sun Jun 16 14:58:39 2024
-# Process ID: 8748
+# Start of session at: Sun Jun 16 16:44:46 2024
+# Process ID: 24220
 # Current directory: C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.runs/synth_1
 # Command line: vivado.exe -log HTDI20.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source HTDI20.tcl
 # Log file: C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.runs/synth_1/HTDI20.vds
@@ -12,7 +12,7 @@
 # Running On: MSI, OS: Windows, CPU Frequency: 2208 MHz, CPU Physical cores: 6, Host memory: 17019 MB
 #-----------------------------------------------------------
 source HTDI20.tcl -notrace
-create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 464.344 ; gain = 182.574
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 464.555 ; gain = 183.801
 Command: synth_design -top HTDI20 -part xc7a35tcpg236-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
@@ -20,9 +20,9 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 2652
+INFO: [Synth 8-7075] Helper process launched with PID 16600
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1307.926 ; gain = 439.906
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 1309.035 ; gain = 441.559
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'HTDI20' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.srcs/sources_1/new/HTDI20_V2.vhd:59]
 INFO: [Synth 8-638] synthesizing module 'Unidad_Control' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.srcs/sources_1/new/Unidad_Control/Unidad_Control/Unidad_Control.vhd:52]
@@ -34,18 +34,18 @@ INFO: [Synth 8-638] synthesizing module 'Registro_IVEC' [C:/Users/danie/OneDrive
 INFO: [Synth 8-256] done synthesizing module 'Registro_IVEC' (0#1) [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.srcs/sources_1/new/Interrupciones/Registro_IVEC/Registro_IVEC.vhd:45]
 INFO: [Synth 8-638] synthesizing module 'Registro_AUTO' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.srcs/sources_1/new/Interrupciones/Registro_AUTO/Registro_AUTO.vhd:44]
 INFO: [Synth 8-256] done synthesizing module 'Registro_AUTO' (0#1) [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.srcs/sources_1/new/Interrupciones/Registro_AUTO/Registro_AUTO.vhd:44]
-INFO: [Synth 8-638] synthesizing module 'Unidad_Microprogramas' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.srcs/sources_1/new/Unidad_Control/Unidad_Microprograma/new/Unidad_Microprogramas.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'Unidad_Microprogramas' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.srcs/sources_1/new/Unidad_Control/Unidad_Microprograma/new/Unidad_Microprogramas.vhd:59]
 INFO: [Synth 8-638] synthesizing module 'Contador_Zona' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.srcs/sources_1/new/Unidad_Control/Unidad_Microprograma/new/Contador_Zona.vhd:48]
 INFO: [Synth 8-256] done synthesizing module 'Contador_Zona' (0#1) [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.srcs/sources_1/new/Unidad_Control/Unidad_Microprograma/new/Contador_Zona.vhd:48]
-INFO: [Synth 8-638] synthesizing module 'Selector_Zona' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.srcs/sources_1/new/Unidad_Control/Unidad_Microprograma/new/Selector_Zona.vhd:51]
+INFO: [Synth 8-638] synthesizing module 'Selector_Zona' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.srcs/sources_1/new/Unidad_Control/Unidad_Microprograma/new/Selector_Zona.vhd:52]
 INFO: [Synth 8-638] synthesizing module 'Registro_Instruccion' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.srcs/sources_1/new/Registros/Registro_Instruccion/Registro_Instruccion.vhd:46]
 INFO: [Synth 8-256] done synthesizing module 'Registro_Instruccion' (0#1) [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.srcs/sources_1/new/Registros/Registro_Instruccion/Registro_Instruccion.vhd:46]
-INFO: [Synth 8-256] done synthesizing module 'Selector_Zona' (0#1) [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.srcs/sources_1/new/Unidad_Control/Unidad_Microprograma/new/Selector_Zona.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'Selector_Zona' (0#1) [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.srcs/sources_1/new/Unidad_Control/Unidad_Microprograma/new/Selector_Zona.vhd:52]
 INFO: [Synth 8-638] synthesizing module 'Memory' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.srcs/sources_1/new/Unidad_Control/Unidad_Microprograma/new/Memory.vhd:45]
-INFO: [Synth 8-3491] module 'UCROM' declared at 'C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.runs/synth_1/.Xil/Vivado-8748-MSI/realtime/UCROM_stub.vhdl:6' bound to instance 'UC_ROM' of component 'UCROM' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.srcs/sources_1/new/Unidad_Control/Unidad_Microprograma/new/Memory.vhd:58]
-INFO: [Synth 8-638] synthesizing module 'UCROM' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.runs/synth_1/.Xil/Vivado-8748-MSI/realtime/UCROM_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'UCROM' declared at 'C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.runs/synth_1/.Xil/Vivado-24220-MSI/realtime/UCROM_stub.vhdl:6' bound to instance 'UC_ROM' of component 'UCROM' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.srcs/sources_1/new/Unidad_Control/Unidad_Microprograma/new/Memory.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'UCROM' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.runs/synth_1/.Xil/Vivado-24220-MSI/realtime/UCROM_stub.vhdl:15]
 INFO: [Synth 8-256] done synthesizing module 'Memory' (0#1) [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.srcs/sources_1/new/Unidad_Control/Unidad_Microprograma/new/Memory.vhd:45]
-INFO: [Synth 8-256] done synthesizing module 'Unidad_Microprogramas' (0#1) [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.srcs/sources_1/new/Unidad_Control/Unidad_Microprograma/new/Unidad_Microprogramas.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'Unidad_Microprogramas' (0#1) [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.srcs/sources_1/new/Unidad_Control/Unidad_Microprograma/new/Unidad_Microprogramas.vhd:59]
 INFO: [Synth 8-638] synthesizing module 'Condicionales_6_91' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.srcs/sources_1/new/Unidad_Control/Condicionales_6-91/Condicionales_6_91.vhd:52]
 INFO: [Synth 8-256] done synthesizing module 'Condicionales_6_91' (0#1) [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.srcs/sources_1/new/Unidad_Control/Condicionales_6-91/Condicionales_6_91.vhd:52]
 INFO: [Synth 8-638] synthesizing module 'Vector_Inicio' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.srcs/sources_1/new/Unidad_Control/Vector_Inicio/Vector_Inicio.vhd:44]
@@ -58,8 +58,8 @@ INFO: [Synth 8-638] synthesizing module 'Control_Buses' [C:/Users/danie/OneDrive
 INFO: [Synth 8-256] done synthesizing module 'Control_Buses' (0#1) [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.srcs/sources_1/new/Unidad_Control/Control_Buses/Control_Buses.vhd:49]
 INFO: [Synth 8-638] synthesizing module 'Selector_Interrupcion' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.srcs/sources_1/new/Unidad_Control/Selector_Interrupcion/Selector_Interrupcion.vhd:46]
 INFO: [Synth 8-256] done synthesizing module 'Selector_Interrupcion' (0#1) [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.srcs/sources_1/new/Unidad_Control/Selector_Interrupcion/Selector_Interrupcion.vhd:46]
-INFO: [Synth 8-638] synthesizing module 'Secuencial_SUC' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.srcs/sources_1/new/Unidad_Control/SUC/SUC.vhd:53]
-INFO: [Synth 8-256] done synthesizing module 'Secuencial_SUC' (0#1) [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.srcs/sources_1/new/Unidad_Control/SUC/SUC.vhd:53]
+INFO: [Synth 8-638] synthesizing module 'Secuencial_SUC' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.srcs/sources_1/new/Unidad_Control/SUC/SUC.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'Secuencial_SUC' (0#1) [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.srcs/sources_1/new/Unidad_Control/SUC/SUC.vhd:54]
 INFO: [Synth 8-256] done synthesizing module 'Unidad_Control' (0#1) [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.srcs/sources_1/new/Unidad_Control/Unidad_Control/Unidad_Control.vhd:52]
 INFO: [Synth 8-638] synthesizing module 'Arquitectura_Fisica' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.srcs/sources_1/new/Registros/Conexion_Registros/Arquitectura_Fisica.vhd:49]
 INFO: [Synth 8-638] synthesizing module 'Registro_8_bits' [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.srcs/sources_1/new/Registros/Registro_8_bits/Registro_8_bits.vhd:44]
@@ -121,24 +121,24 @@ WARNING: [Synth 8-7129] Port ROMB[0] in module Condicionales_6_91 is either unco
 WARNING: [Synth 8-7129] Port LCB_IN[4] in module Unidad_Control is either unconnected or has no load
 WARNING: [Synth 8-7129] Port LCB_IN[3] in module HTDI20 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1453.641 ; gain = 585.621
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 1454.348 ; gain = 586.871
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1453.641 ; gain = 585.621
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 1454.348 ; gain = 586.871
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1453.641 ; gain = 585.621
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 1454.348 ; gain = 586.871
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 1453.641 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 1454.348 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.runs/synth_1/.Xil/Vivado-8748-MSI/UCROM/UCROM/UCROM_in_context.xdc] for cell 'UC/Uni_Micropro/UCROM/UC_ROM'
-Finished Parsing XDC File [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.runs/synth_1/.Xil/Vivado-8748-MSI/UCROM/UCROM/UCROM_in_context.xdc] for cell 'UC/Uni_Micropro/UCROM/UC_ROM'
+Parsing XDC File [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.runs/synth_1/.Xil/Vivado-24220-MSI/UCROM/UCROM/UCROM_in_context.xdc] for cell 'UC/Uni_Micropro/UCROM/UC_ROM'
+Finished Parsing XDC File [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.runs/synth_1/.Xil/Vivado-24220-MSI/UCROM/UCROM/UCROM_in_context.xdc] for cell 'UC/Uni_Micropro/UCROM/UC_ROM'
 Parsing XDC File [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.srcs/constrs_1/new/CMOD.xdc]
 WARNING: [Vivado 12-507] No nets matched 'LCB_IN_IBUF[0]'. [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.srcs/constrs_1/new/CMOD.xdc:6]
 Finished Parsing XDC File [C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.srcs/constrs_1/new/CMOD.xdc]
@@ -147,40 +147,41 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/HTDI20_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1549.348 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1553.723 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1549.348 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1553.723 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:24 . Memory (MB): peak = 1549.348 ; gain = 681.328
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:28 . Memory (MB): peak = 1553.723 ; gain = 686.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:24 . Memory (MB): peak = 1549.348 ; gain = 681.328
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:28 . Memory (MB): peak = 1553.723 ; gain = 686.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property KEEP_HIERARCHY = SOFT for UC/Uni_Micropro/UCROM/UC_ROM. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:24 . Memory (MB): peak = 1549.348 ; gain = 681.328
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:28 . Memory (MB): peak = 1553.723 ; gain = 686.246
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 's_estado_reg' in module 'Secuencial_SUC'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
-                  inicio |                               00 |                               00
-                busqueda |                               01 |                               01
-               ejecucion |                               10 |                               10
-            interrupcion |                               11 |                               11
+                  inicio |                              000 |                              000
+                busqueda |                              001 |                              001
+               ejecucion |                              010 |                              010
+                 ini_int |                              011 |                              100
+            interrupcion |                              100 |                              011
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 's_estado_reg' using encoding 'sequential' in module 'Secuencial_SUC'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:30 . Memory (MB): peak = 1549.348 ; gain = 681.328
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:34 . Memory (MB): peak = 1553.723 ; gain = 686.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -206,15 +207,17 @@ Detailed RTL Component Info :
 	  16 Input    9 Bit        Muxes := 1     
 	   2 Input    9 Bit        Muxes := 1     
 	   2 Input    8 Bit        Muxes := 381   
-	   5 Input    8 Bit        Muxes := 2     
+	   6 Input    8 Bit        Muxes := 2     
 	   2 Input    7 Bit        Muxes := 1     
 	   2 Input    6 Bit        Muxes := 1     
 	   2 Input    5 Bit        Muxes := 1     
 	   2 Input    4 Bit        Muxes := 1     
-	   4 Input    2 Bit        Muxes := 1     
-	   2 Input    2 Bit        Muxes := 9     
+	   5 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 7     
+	   2 Input    2 Bit        Muxes := 3     
 	   2 Input    1 Bit        Muxes := 43    
-	   4 Input    1 Bit        Muxes := 5     
+	   5 Input    1 Bit        Muxes := 5     
+	   4 Input    1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -232,25 +235,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:48 . Memory (MB): peak = 1549.348 ; gain = 681.328
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:51 . Memory (MB): peak = 1553.723 ; gain = 686.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:56 . Memory (MB): peak = 1549.348 ; gain = 681.328
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:59 . Memory (MB): peak = 1553.723 ; gain = 686.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:58 . Memory (MB): peak = 1549.348 ; gain = 681.328
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:01:01 . Memory (MB): peak = 1553.723 ; gain = 686.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:59 . Memory (MB): peak = 1549.348 ; gain = 681.328
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:01:02 . Memory (MB): peak = 1553.723 ; gain = 686.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -268,37 +271,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:01:06 . Memory (MB): peak = 1549.348 ; gain = 681.328
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:01:10 . Memory (MB): peak = 1553.723 ; gain = 686.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:01:06 . Memory (MB): peak = 1549.348 ; gain = 681.328
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:01:10 . Memory (MB): peak = 1553.723 ; gain = 686.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:01:06 . Memory (MB): peak = 1549.348 ; gain = 681.328
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:01:11 . Memory (MB): peak = 1553.723 ; gain = 686.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:01:06 . Memory (MB): peak = 1549.348 ; gain = 681.328
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:01:11 . Memory (MB): peak = 1553.723 ; gain = 686.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:01:07 . Memory (MB): peak = 1549.348 ; gain = 681.328
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:01:11 . Memory (MB): peak = 1553.723 ; gain = 686.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:01:07 . Memory (MB): peak = 1549.348 ; gain = 681.328
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:01:11 . Memory (MB): peak = 1553.723 ; gain = 686.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -319,13 +322,13 @@ Report Cell Usage:
 |2     |BUFG       |     2|
 |3     |CARRY4     |   148|
 |4     |LUT1       |    33|
-|5     |LUT2       |   357|
-|6     |LUT3       |   167|
-|7     |LUT4       |   181|
-|8     |LUT5       |    83|
-|9     |LUT6       |   703|
+|5     |LUT2       |   356|
+|6     |LUT3       |   161|
+|7     |LUT4       |   188|
+|8     |LUT5       |    82|
+|9     |LUT6       |   705|
 |10    |MUXF7      |     2|
-|11    |FDCE       |    16|
+|11    |FDCE       |    17|
 |12    |FDPE       |    12|
 |13    |FDRE       |   995|
 |14    |FDSE       |     4|
@@ -336,29 +339,29 @@ Report Cell Usage:
 |19    |OBUFT      |    20|
 +------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:01:07 . Memory (MB): peak = 1549.348 ; gain = 681.328
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:01:11 . Memory (MB): peak = 1553.723 ; gain = 686.246
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:01:04 . Memory (MB): peak = 1549.348 ; gain = 585.621
-Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:01:07 . Memory (MB): peak = 1549.348 ; gain = 681.328
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:01:08 . Memory (MB): peak = 1553.723 ; gain = 586.871
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:01:12 . Memory (MB): peak = 1553.723 ; gain = 686.246
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 1549.348 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 1553.723 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 166 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 8 inverter(s) to 8 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1549.348 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1553.723 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 16 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 8 instances
   LDC => LDCE (inverted pins: G): 8 instances
 
-Synth Design complete | Checksum: bbe8671e
+Synth Design complete | Checksum: e483e100
 INFO: [Common 17-83] Releasing license: Synthesis
 84 Infos, 32 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:01:14 . Memory (MB): peak = 1549.348 ; gain = 1073.285
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1549.348 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:01:20 . Memory (MB): peak = 1553.723 ; gain = 1076.961
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1553.723 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.runs/synth_1/HTDI20.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file HTDI20_utilization_synth.rpt -pb HTDI20_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Jun 16 15:00:05 2024...
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 16 16:46:18 2024...

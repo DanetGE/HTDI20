@@ -2,7 +2,7 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
--- Date        : Tue Jun 11 21:56:50 2024
+-- Date        : Sun Jun 16 16:44:27 2024
 -- Host        : MSI running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
 --               C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.runs/UCROM_synth_1/UCROM_stub.vhdl
