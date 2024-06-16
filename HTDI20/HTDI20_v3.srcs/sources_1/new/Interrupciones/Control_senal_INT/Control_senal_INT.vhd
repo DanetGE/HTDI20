@@ -77,10 +77,10 @@ BEGIN
         IF (n_RST = '1')  THEN
             IF (RISING_EDGE(CK4)) THEN
                 --Se activan por flanco descendente
-                IF (sn_NINT = '0') THEN
+                IF (sn_NINT = '1') THEN
                     s_QB2 <= s_QB1;
                 --Se activan por nivel bajo
-                ELSIF (sn_NINT = '1') THEN
+                ELSIF (sn_NINT = '0') THEN
                     s_QB2 <= n_INT;
                 END IF;
                 s_QB3 <= s_QB2;
@@ -96,13 +96,13 @@ BEGIN
     
     Primer_registro:   PROCESS(n_SETFF, n_INT, n_RST) BEGIN
         --Si flanco descendente en /INT.
-        IF ((n_RST = '1') AND (n_SETFF = '1'))  THEN
+        IF ((n_RST AND n_SETFF) = '1')  THEN
             IF (FALLING_EDGE(n_INT)) THEN
                 s_QB1  <= '0';  
             END IF;
         
         --Se reinicia el registro
-        ELSIF ((n_RST = '0') OR (n_SETFF = '0')) THEN 
+        ELSIF ((n_RST AND n_SETFF) = '0') THEN 
             s_QB1  <= '1';
             
         END IF;

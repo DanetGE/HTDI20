@@ -109,7 +109,7 @@ BEGIN
                     WHEN INTERRUPCION =>
                         IF(n_FIN_CI = '0') THEN 
                             s_estado <= BUSQUEDA;
-                        ELSIF(n_FIN_CI = '0') THEN 
+                        ELSIF(n_FIN_CI = '1') THEN 
                             s_estado <= INTERRUPCION;
                         END IF;
                 END CASE;

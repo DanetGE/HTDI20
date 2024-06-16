@@ -70,6 +70,12 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param checkpoint.writeSynthRtdsInDcp 1
+set_param chipscope.maxJobs 3
+set_param synth.incrementalSynthesisCache C:/Users/danie/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-16652-MSI/incrSyn
+set_param xicom.use_bs_reader 1
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
@@ -86,7 +92,7 @@ set_property ip_output_repo c:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Document
 set_property ip_cache_permissions disable [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-add_files c:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.srcs/sources_1/new/Datos_Memoria.coe
+add_files C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.srcs/sources_1/new/Datos_Memoria.coe
 read_vhdl -library xil_defaultlib {
   C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.srcs/sources_1/new/Registros/Registro_Auxiliar_8bits/Registro_Auxiliar_8bits.vhd
   C:/Users/danie/OneDrive/MSI_P65_Creator_8RE/Documentos/5_Carrera/TFG/Github/HTDI20/HTDI20_v3.srcs/sources_1/new/Unidad_Control/Unidad_Microprograma/new/Contador_Zona.vhd

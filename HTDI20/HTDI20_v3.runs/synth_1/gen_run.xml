@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1718135869">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1718542714">
   <File Type="PA-TCL" Name="HTDI20.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="HTDI20_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="HTDI20_reports.tcl"/>

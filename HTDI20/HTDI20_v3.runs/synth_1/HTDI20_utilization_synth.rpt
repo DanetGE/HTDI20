@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Tue Jun 11 21:59:04 2024
+| Date         : Sun Jun 16 15:00:05 2024
 | Host         : MSI running 64-bit major release  (build 9200)
 | Command      : report_utilization -file HTDI20_utilization_synth.rpt -pb HTDI20_utilization_synth.pb
 | Design       : HTDI20
@@ -31,8 +31,8 @@ Table of Contents
 +-------------------------+------+-------+------------+-----------+-------+
 |        Site Type        | Used | Fixed | Prohibited | Available | Util% |
 +-------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs*             | 1249 |     0 |          0 |     20800 |  6.00 |
-|   LUT as Logic          | 1249 |     0 |          0 |     20800 |  6.00 |
+| Slice LUTs*             | 1245 |     0 |          0 |     20800 |  5.99 |
+|   LUT as Logic          | 1245 |     0 |          0 |     20800 |  5.99 |
 |   LUT as Memory         |    0 |     0 |          0 |      9600 |  0.00 |
 | Slice Registers         | 1035 |     0 |          0 |     41600 |  2.49 |
 |   Register as Flip Flop | 1027 |     0 |          0 |     41600 |  2.47 |
@@ -152,7 +152,7 @@ Warning! LUT value is adjusted to account for LUT combining.
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
 | FDRE     |  995 |        Flop & Latch |
-| LUT6     |  707 |                 LUT |
+| LUT6     |  703 |                 LUT |
 | LUT2     |  357 |                 LUT |
 | LUT4     |  181 |                 LUT |
 | LUT3     |  167 |                 LUT |

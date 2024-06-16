@@ -48,7 +48,7 @@ BEGIN
     TRIESTADO: PROCESS(n_OE_IAUT) BEGIN
         --La salida no esta en triestado
         IF(n_OE_IAUT = '0') THEN 
-            IDB <= x"0010";
+            IDB <= x"F010";
             
         --Triestado en la salida
         ELSE

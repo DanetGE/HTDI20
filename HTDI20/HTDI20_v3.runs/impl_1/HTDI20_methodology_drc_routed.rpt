@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Tue Jun 11 22:02:12 2024
+| Date         : Sun Jun 16 15:27:38 2024
 | Host         : MSI running 64-bit major release  (build 9200)
 | Command      : report_methodology -file HTDI20_methodology_drc_routed.rpt -pb HTDI20_methodology_drc_routed.pb -rpx HTDI20_methodology_drc_routed.rpx
 | Design       : HTDI20
@@ -39,12 +39,12 @@ Table of Contents
 -----------------
 TIMING-14#1 Critical Warning
 LUT on the clock tree  
-The LUT UC/Sinc_BREQ/MAIN.S[5]_i_2 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+The LUT UC/Sinc_BREQ/FSM_sequential_s_estado[1]_i_2 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
 Related violations: <none>
 
 TIMING-14#2 Critical Warning
 LUT on the clock tree  
-The LUT UC/Sinc_BREQ/s_estado[1]_i_2 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+The LUT UC/Sinc_BREQ/MAIN.S[5]_i_2 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
 Related violations: <none>
 
 TIMING-17#1 Critical Warning
