@@ -582,8 +582,9 @@ int Enviar_datos_Puerto_Serie(char N_Puerto[2]){
 
 %}
 
-
-NOMBRE_VARIABLES    [A-Za-z]([A-WY-Z0-9a-z]{1,19})
+ALFANUMERICO        [A-Z0-9a-z]
+GUION               [_]
+NOMBRE_VARIABLES    [A-Za-z](({ALFANUMERICO}|{GUION}){1,19})
 
 NUMERO              [0-9]
 DATOS_VARIABLES     (0x([A-F0-9]{2}))|(0x([A-F0-9]{4}))
@@ -1050,12 +1051,14 @@ MINT1       Interpretar_nemonico("BF",'\0',0,'\0','\0',0,'\n');      /* 192 */
                 }
 
 
-(";"+)(.+)      ;   /*Es un comentario, no se hace nada*/
+(";"+)(.*)     ;   /*Es un comentario, no se hace nada*/
 
 \t              {if(error_linea == true){      /*No existe nemónico*/
                     fprintf(errores, "\t", yytext);     /*Se imprime el tab*/
                 }
                 }
+
+" "             ;  /*Es un espacio, no se hace nada*/
 
 .               {if(error_linea == false){
                     error_linea = true;
@@ -1145,6 +1148,9 @@ int main(){
         /*Se borran los archivos de salida*/
         remove(filename_error);
         remove(filename_out);
+
+        /*Se reinicia el numero de linea*/
+        nlinea = 0;
 
 
         /*Se abre el archivo dado por el directorio*/
